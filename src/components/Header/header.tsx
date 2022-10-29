@@ -1,8 +1,10 @@
 import Link from "next/link";
+import styles from '../../../styles/Home.module.css'
+
 
 function Header() {
   return (
-      <ul>
+      <ul className={styles.header}>
         <Link href="/" >LOCALIZAÇÃO  </Link>
         <Link href="/" >RESERVAS  </Link>
         <Link href="/" >QUARTOS  </Link>

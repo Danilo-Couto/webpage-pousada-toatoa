@@ -1,3 +1,4 @@
+import styles from '../../../styles/Home.module.css'
 import {
   AiOutlineInstagram,
   AiOutlineWhatsApp,
@@ -30,7 +31,7 @@ export default function Footer() {
   //   </a>
   // </footer>
   
-  <div className="">
+  <div className={styles.footer}>
     <span>
       Pousada Toa Toa Em Pipa - Rua Praia do Amor, 48 B
     </span> 

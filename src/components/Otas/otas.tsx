@@ -1,11 +1,10 @@
 import styles from '../../../styles/Home.module.css'
-
 function Otas() {
   return (
-    <div >
-      <h2>OUTROS CANAIS DE RESERVA</h2>
-      <h3>Mas garantimos 10% de desconto, reservando diretamente conosco</h3>
-      <button> RESERVE JÁ</button>
+    <div className={styles.main}>
+      <h2 className={styles.sub_title}>OUTROS CANAIS DE RESERVA</h2>
+      <h3 className={styles.description}>Mas garantimos 10% de desconto, reservando diretamente conosco</h3>
+      <button className={styles.button}> RESERVE JÁ</button>
       <div className={styles.grid}>
         <a href="" className={styles.card}>
           <p> BOOKING</p> 

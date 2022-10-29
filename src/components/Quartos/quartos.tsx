@@ -3,12 +3,12 @@ import styles from '../../../styles/Home.module.css'
 function Quartos() {
   return (
     <div className={styles.main}>
-        <h2>
+        <h2 className={styles.sub_title}>
           NOSSOS QUARTOS
         </h2>
-        <p className={styles.description}>
+        <h3 className={styles.description}>
           Quartos privativos para casais e grupos de até 6 pessoas. Todos com banheiro privativo com chuveiro elétrico, wifi, toalhas e roupas de cama.
-        </p>
+        </h3>
 
         <div className={styles.grid}>
           <a href="" className={styles.card}>
