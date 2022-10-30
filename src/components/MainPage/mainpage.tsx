@@ -7,12 +7,12 @@ import Otas from '../Otas/otas';
 import Quartos from '../Quartos/quartos';
 
 
-export default function MainPage() {
+export default function MainPage(instagramPosts) {
   return (
     <main className={styles.main}>
       <Intro />
       <Quartos />
-      <Instagram />
+      <Instagram instagramPosts={instagramPosts} />
       <Localizacao />
       <Avaliacoes />
       <Otas />
