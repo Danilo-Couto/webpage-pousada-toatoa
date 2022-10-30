@@ -1,8 +1,8 @@
 import styles from '../../../styles/Home.module.css'
 
 
-function Instagram({ instagramPosts }) {
-  console.log('instagram:', instagramPosts)
+function Instagram({ instaFeed }) {
+  console.log('instagram:', typeof(instaFeed))
   return (
     <>
     <h2 className={styles.sub_title}>@TOATOA_PIPA</h2>
@@ -13,7 +13,7 @@ function Instagram({ instagramPosts }) {
         </a>
       </div>
       {/* <ul>
-        {instagramPosts.map(({ node }, i) => {
+        {instaFeed.map(({ node }, i) => {
           return (
             <li>
               <a
