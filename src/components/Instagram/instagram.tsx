@@ -1,40 +1,30 @@
 import styles from '../../../styles/Home.module.css'
 
+function Instagram({feed}) {
+  // console.log(feed)
 
-function Instagram({ instaFeed }) {
-  console.log('instagram:', typeof(instaFeed))
   return (
     <>
     <h2 className={styles.sub_title}>@TOATOA_PIPA</h2>
     <div className={styles.grid}>
-      <div className={styles.grid}>
-        <a href="" className={styles.card}>
-          <p> cards insta</p>
-        </a>
-      </div>
-      {/* <ul>
-        {instaFeed.map(({ node }, i) => {
+      <div>
+        {feed.slice(0, 4).map((obj, key) => {
           return (
-            <li>
               <a
-                href={`https://www.instagram.com/p/${node.shortcode}`}
-                key={i}
+                key={key}
+                href={obj.media_url}
                 aria-label="view image on Instagram"
               >
                 <img
-                  src={node.thumbnail_src}
-                  alt={
-                    // the caption with hashtags removed
-                    node.edge_media_to_caption.edges[0].node.text
-                      .replace(/(#\w+)+/g, "")
-                      .trim()
-                  }
-                />
+                  className={styles.img_feed}
+                  src={obj.media_url}
+                  alt={obj.id}
+                  />
               </a>
-            </li>
           )
-        })}
-      </ul> */}
+        })
+      }
+      </div>
     </div>
     </>
     );

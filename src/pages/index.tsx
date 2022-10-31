@@ -5,12 +5,14 @@ import Footer from '../components/Footer/footer'
 import Header from '../components/Header/header'
 
 
-export default function Index({ instaFeed }) {
+export default function Index( {feed}) {
+  // console.log(instaFeed)
+
   return (
     <div className={styles.container}>
       <HeadComponent />
       <Header />
-      <MainPage instaFeed={instaFeed} />     
+      <MainPage feed={feed} />     
       <Footer />
     </div>
   )
@@ -21,11 +23,11 @@ export async function getStaticProps(context) {
 
   const data = await fetch(url);
   const dataJson = await data.json();
-  const instaFeed = dataJson.data
+  const instaFeed = dataJson.data;
 
   return {
     props: {
-      instaFeed
+      feed: instaFeed
     },
   }
 }
