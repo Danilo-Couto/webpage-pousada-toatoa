@@ -13,7 +13,6 @@ function Localizacao() {
     lng: -38.523
   };
   
-
   return (
     <>
       <h2 className={styles.sub_title}>LOCALIZACAO</h2><div className={styles.grid}>
