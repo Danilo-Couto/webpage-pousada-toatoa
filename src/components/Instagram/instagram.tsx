@@ -1,8 +1,6 @@
 import styles from '../../../styles/Home.module.css'
 
 function Instagram({feed}) {
-  // console.log(feed)
-
   return (
     <>
     <h2 className={styles.sub_title}>@TOATOA_PIPA</h2>
