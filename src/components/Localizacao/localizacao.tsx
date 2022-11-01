@@ -4,32 +4,34 @@ import { GoogleMap, useLoadScript, Marker, LoadScript } from "@react-google-maps
 
 function Localizacao() {
   const containerStyle = {
-    width: '400px',
+    width: '1200px',
     height: '400px'
   };
   
   const center = {
-    lat: -3.745,
-    lng: -38.523
+    lat: -6.2316437861024365,
+    lng: -35.04304665161367
   };
   
   return (
     <>
-      <h2 className={styles.sub_title}>LOCALIZACAO</h2><div className={styles.grid}>
+      <h2 className={styles.sub_title}>LOCALIZACAO</h2>
+      <p>Rua Praia do Amor, 48, B, Pipa - RN</p>
+      <div className={styles.grid}>
         <div className={styles.grid}>
-        <LoadScript
-          googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
-        >
-          <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            zoom={10}
+          <LoadScript
+            googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
           >
-          <>
-        </>
-          </GoogleMap>
-        </LoadScript>
-      </div>
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              zoom={15}
+            >
+              <Marker position={center}/>
+              
+            </GoogleMap>
+          </LoadScript>
+        </div>
       </div>
     </>
     );
@@ -47,3 +49,5 @@ function Localizacao() {
 
 
 export default Localizacao;
+
+// https://www.youtube.com/watch?v=9e-5QHpadi0
