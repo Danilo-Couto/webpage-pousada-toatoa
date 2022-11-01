@@ -1,18 +1,15 @@
 import styles from '../../../styles/Home.module.css'
 
-function Avaliacoes() {
+function Avaliacoes(ratings) {
   return (
-    <><h2 className={styles.sub_title}>AVALIAÇÕES</h2><div className={styles.grid}>
+    <>
+      <h2 className={styles.sub_title}>AVALIAÇÕES</h2>
       <div className={styles.grid}>
-        <p> "blabalbala"</p>
+        <div>
+          {!ratings ? 'ratings' : <p></p>}    
+        </div>
       </div>
-      <div className={styles.grid}>
-        <p> "blabalbala"</p>
-      </div>
-      <div className={styles.grid}>
-        <p> "blabalbala"</p>
-      </div>
-    </div></>
+    </>
     );
 }
 
