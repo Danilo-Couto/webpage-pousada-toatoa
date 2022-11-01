@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from '../../../styles/Home.module.css'
 import mypic from '../../../public/images/hospedagem praia do amor - toa toa 20220907_124214~2.jpg'
+import BookNowButton from "../Button/bookNow";
 
 function Intro() {
   return (
@@ -21,10 +22,7 @@ function Intro() {
             className={styles.img_main}
           />
       </div>
-
-      <button className={styles.button} >
-        <h3>RESERVE AGORA COM 10% DE DESCONTO</h3>
-      </button>
+      <BookNowButton />
     </div>
     );
 }
