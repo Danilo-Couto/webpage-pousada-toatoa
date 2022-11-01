@@ -22,11 +22,11 @@ function Instagram({feed}) {
   return (
     <>
     <a href='https://www.instagram.com/toatoa_pipa/' target="_blank" className={styles.sub_title} rel="noreferrer">@TOATOA_PIPA</a>
-    <div className={styles.grid}>
-      <div>
-        {!feed ? Feed(feed) : <p></p>}    
+      <div className={styles.grid}>
+        <div>
+          {!feed ? Feed(feed) : <p></p>}    
+        </div>
       </div>
-    </div>
     </>
     );
 }
