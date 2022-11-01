@@ -19,7 +19,7 @@
   border-top: 1px solid #eaeaea;
 }
 
-.button {
+.button_booknow {
   background-color:red;
   color: white;
   font-size: large;
@@ -52,21 +52,6 @@
   max-width: 300px;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
-  color:red;
-  background-color: white;
-  border-color: red;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
@@ -92,15 +77,6 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-}
-
-.sub_title a:hover
-.sub_title a:focus,
-.sub_title a:active,
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
 }
 
 .title{
@@ -137,13 +113,60 @@
 }
 
 .img_feed {
-  width:25%;
+  width:2%;
+  height:auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  width:100%;
   height:auto;
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  width:5%;
+  height:5%;
+  object-fit:cover;
+}
+
+.back_to_top {
+  margin: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 150px;
+  /* cursor: inherit; */
+}
+
+.logo, .button_booknow, .back_to_top { 
+  cursor: pointer;
+}
+
+.button_booknow:hover,
+.button_booknow:focus,
+.button_booknow:active {
+  color:red;
+  background-color: white;
+  border-color: red;
+}
+
+.card:hover,
+.card:focus,
+.card:active,
+.back_to_top:hover {
+  color: black;
+  border-color: black;
+}
+
+.sub_title a:hover
+.sub_title a:focus,
+.sub_title a:active,
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
