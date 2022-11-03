@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "next.config.js"  ],
+, "next.config.js", "src/pages/quartos/laranja.tsx__", "src/pages/quartos/[pid].tsx__"  ],
   "exclude": [
     "node_modules"
   ]

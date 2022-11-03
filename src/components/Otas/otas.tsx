@@ -2,9 +2,9 @@ import styles from '../../../styles/Home.module.css'
 import BookNowButton from '../Button/bookNow';
 function Otas() {
   return (
-      <>
+      <div className={styles.main}>
         <h2 className={styles.sub_title}>OUTROS CANAIS DE RESERVA</h2>
-        <div className={styles.main}>
+        <div className={styles.otas}>
           <h3 className={styles.description}>Mas garantimos 10% de desconto reservando diretamente conosco</h3>
           <BookNowButton/>
           <div className={styles.grid}>
@@ -22,7 +22,7 @@ function Otas() {
             </a>
           </div>
         </div>
-      </>
+      </div>
   );
 }
 

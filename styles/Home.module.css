@@ -7,6 +7,7 @@
   flex: 1;
   padding: 1rem;
   justify-content:space-between;
+  align-content: center;
   flex-wrap: wrap;
 }
 
@@ -17,6 +18,7 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid #eaeaea;
+  margin: 1rem;
 }
 
 .button_booknow {
@@ -38,6 +40,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: auto;
+  margin: 1rem;
 }
 
 .card {
@@ -50,6 +53,12 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+}
+
+.otas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card h2 {
@@ -138,6 +147,23 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 150px;
   /* cursor: inherit; */
+}
+
+.main_rooms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 1rem;
+  max-width: 35%;
+}
+
+
+.rooms {
+  display: flex;
+  width:50%;
+  height:auto;
+  flex-grow: 1;
 }
 
 .logo, .button_booknow, .back_to_top { 

@@ -14,7 +14,7 @@ function Localizacao() {
   };
   
   return (
-    <>
+    <div className={styles.main}>
       <h2 className={styles.sub_title}>LOCALIZACAO</h2>
       <p>Rua Praia do Amor, 48, B, Pipa - RN</p>
       <div className={styles.grid}>
@@ -33,7 +33,7 @@ function Localizacao() {
           </LoadScript>
         </div>
       </div>
-    </>
+    </div>
     );
   }
   
