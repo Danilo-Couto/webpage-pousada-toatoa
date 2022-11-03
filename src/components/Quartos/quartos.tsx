@@ -12,7 +12,7 @@ function Quartos({quartos}) {
           Quartos privativos para casais e grupos de até 6 pessoas. Todos com banheiro privativo com chuveiro elétrico, wifi, toalhas e roupas de cama.
         </h3>
         <div className={styles.grid}>
-          {Object.values(quartos).map((e, i)=> ( 
+          {quartos.map((e, i)=> ( 
             <Link
             key = {i}
             href={e.href} className={styles.card}
@@ -25,9 +25,7 @@ function Quartos({quartos}) {
             className={styles.img_card}
             />
           </Link>
-            
-            )
-          )}
+          ))}
         </div>
     </div>
     );

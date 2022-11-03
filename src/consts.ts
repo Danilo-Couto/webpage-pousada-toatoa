@@ -39,8 +39,9 @@ const itemsChales = [
     'Wi-Fi',
 ]
 
-export const rooms = [{
-    laranja: {
+export const rooms = [
+    {
+        name: 'laranja',    
         title: 'SUÍTE POR DO SOL',
         subtitulo: subtituloSuite,
         description: 'A suíte laranja, ou colocada de maneira mais poética, nossa Suíte Por do Sol fica no 1o andar com saída exclusiva para o jardim.',
@@ -50,7 +51,8 @@ export const rooms = [{
         alt: 'SUÍTE POR DO SOL - POUSADA TOA TOA EM PIPA',
         href: 'quartos/laranja'
     },
-    verde: {
+    {
+        name: 'verde',
         title: 'SUÍTE FLORESTA',
         subtitulo: subtituloSuite,
         description: 'A suíte verde, ou colocada de maneira mais poética, nossa Suíte Floresta fica no 2o andar com vista para a mata.',
@@ -60,7 +62,9 @@ export const rooms = [{
         alt: 'SUÍTE FLORESTA - POUSADA TOA TOA EM PIPA',
         href: 'quartos/verde'
     },
-    azul: {
+    {
+        name: 'azul',
+        title: 'APTO DO CÉU',
         subtitulo: subtituloAptos,
         description: 'Opção no 1o andar com saída exclusiva para jardim.',
         subDescription: descriptionAptos,
@@ -69,7 +73,8 @@ export const rooms = [{
         alt: 'APTO DO CÉU - POUSADA TOA TOA EM PIPA',
         href: 'quartos/azul'
     },
-    rosa: {
+    {
+        name: 'rosa',
         title: 'APTO DA ONDA',
         subtitulo: subtituloAptos,
         description: 'Opção no 2o andar com vista para a mata.',
@@ -79,14 +84,15 @@ export const rooms = [{
         alt: 'APTO DA ONDA - POUSADA TOA TOA EM PIPA',
         href: 'quartos/rosa'
     },
-    branco: {
+    {
+        name: 'branco',
         title: 'CHALE DA PAZ',
         subtitulo: subtituloChales,
         description: 'Chalé Triplo, ou colocada de maneira mais poética, nosso Chalé da Paz fica no 1a andar.',
         subDescription: descriptionChales,
-        itmes: itemsChales,
+        items: itemsChales,
         src: chales_da_paz,
         alt: 'CHALE DA PAZ - POUSADA TOA TOA EM PIPA',
         href: 'quartos/branco'
     }
-}]
+]

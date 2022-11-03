@@ -5,9 +5,7 @@ import Footer from '../components/Footer/footer'
 import Header from '../components/Header/header'
 import { rooms } from '../consts'
 
-console.log(rooms)
 export default function Index({quartos}) {
-  // console.log(quartos[0])
   return (
     <div className={styles.container}>
       <HeadComponent />
@@ -23,7 +21,7 @@ export async function getStaticProps() {
 
   return {
       props: {
-        quartos: quartos[0]
+        quartos: quartos
       }
   }
 }

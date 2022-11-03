@@ -15,12 +15,12 @@ export default function Home({quartos}) {
   )
 }
 
-export async function getStaticProps({params}) {
-  console.log(params)
+export async function getStaticProps() {
   const quartos = rooms
+
   return {
       props: {
-          quartos:quartos[0]
+        quartos: quartos
       }
   }
 }
