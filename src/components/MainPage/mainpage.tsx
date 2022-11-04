@@ -5,15 +5,17 @@ import Localizacao from '../Localizacao/localizacao';
 import Otas from '../Otas/otas';
 import Quartos from '../Quartos/quartos';
 
-export default function MainPage({quartos}) {
+export default function MainPage({quartos, feed}) {
+  // console.log('main', feed)
   return (
     <main>
       <Intro />
       <Quartos quartos = {quartos}/>
-      <Instagram />
-      <Localizacao />
+      <Instagram feed = {feed} />
       <Avaliacoes />
       <Otas />
+      <Localizacao />
       </main> 
   );
 }
+

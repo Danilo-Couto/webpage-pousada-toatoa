@@ -16,11 +16,9 @@ export default function Home({quartos}) {
 }
 
 export async function getStaticProps() {
-  const quartos = rooms
-
   return {
       props: {
-        quartos: quartos
+        quartos: rooms
       }
   }
 }

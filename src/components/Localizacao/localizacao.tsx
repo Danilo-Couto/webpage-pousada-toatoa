@@ -28,7 +28,6 @@ function Localizacao() {
               zoom={15}
             >
               <Marker position={center}/>
-              
             </GoogleMap>
           </LoadScript>
         </div>
@@ -36,17 +35,6 @@ function Localizacao() {
     </div>
     );
   }
-  
-  function Map() {
-    const center = useMemo(() => ({ lat: 44, lng: -80 }), []);
-
-    return (
-      <GoogleMap zoom={10} center={center} mapContainerClassName="map-container">
-        <Marker position={center} />
-      </GoogleMap>
-    );
-  }
-
 
 export default Localizacao;
 
