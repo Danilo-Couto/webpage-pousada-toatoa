@@ -3,7 +3,7 @@ import styles from '../../../styles/Home.module.css'
 import Footer from '../../components/Footer/footer'
 import Header from '../../components/Header/header'
 import Quartos from '../../components/Quartos/quartos'
-import { rooms } from '../../consts'
+import { rooms } from '../../rooms_const'
 
 export default function Home({quartos}) {
   return (

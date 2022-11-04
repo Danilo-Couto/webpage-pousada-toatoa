@@ -14,15 +14,15 @@ function Header() {
       />
 
       <nav className={styles.header}>
-        <Link href="/"> LOCALIZAÇÃO  </Link>
-        <Link href="/">RESERVAS  </Link>
-        <Link href="/quartos/">QUARTOS </Link>
-        <Link href="/">PASSEIOS PAGOS </Link>
-        <Link href="/">PASSEIOS SEM GUIAS </Link>
-        <Link href="/">GALERIA  </Link>
-        <Link href="/">AVALIAÇÕES  </Link>
-        <Link href="/">FAQ  </Link>
-        <Link href="/"> COMO CHEGAR </Link>
+        <Link href="/localizacao"> LOCALIZAÇÃO  </Link>
+        <Link href="/reservar">RESERVAS  </Link>
+        <Link href="/quartos">QUARTOS </Link>
+        <Link href="/passeios_pagos">PASSEIOS PAGOS </Link>
+        <Link href="/passeios_gratis">PASSEIOS SEM GUIAS </Link>
+        <Link href="/galeria">GALERIA  </Link>
+        <Link href="/avaliacoes">AVALIAÇÕES  </Link>
+        <Link href="/faq">FAQ  </Link>
+        <Link href="/como_chegar"> COMO CHEGAR </Link>
         </nav>
     </div>
  );

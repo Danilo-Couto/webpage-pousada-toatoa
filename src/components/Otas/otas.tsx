@@ -1,5 +1,5 @@
 import styles from '../../../styles/Home.module.css'
-import BookNowButton from '../Button/bookNow';
+import BookNowButton from '../Buttons/bookNow';
 function Otas() {
   return (
       <div className={styles.main}>

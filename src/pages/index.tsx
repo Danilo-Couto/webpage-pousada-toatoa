@@ -3,7 +3,7 @@ import styles from '../../styles/Home.module.css'
 import MainPage from '../components/MainPage/mainpage'
 import Footer from '../components/Footer/footer'
 import Header from '../components/Header/header'
-import { rooms } from '../consts'
+import { rooms } from '../rooms_const'
 
 export default function Index({quartos, feed}) {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from '../../../styles/Home.module.css'
 import mypic from '../../../public/images/hospedagem praia do amor - toa toa 20220907_124214~2.jpg'
-import BookNowButton from "../Button/bookNow";
+import BookNowButton from "../Buttons/bookNow";
 
 function Intro() {
   return (

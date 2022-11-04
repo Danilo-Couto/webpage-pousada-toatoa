@@ -1,46 +1,48 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import {useEffect, useState} from 'react';
 import styles from '../../../styles/Home.module.css'
-import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
 import { handleRedirect} from '../../helpers';
+import ButtonDrive from '../Buttons/bookDrive';
+import Map from './Map/map';
 
 function Localizacao() {
-  const containerStyle = {
-    width: '1200px',
-    height: '400px'
-  };
+  const [showLocation, setShowLocation] = useState(false);
+  const {pathname} = useRouter()
   
-  const center = {
-    lat: -6.2316437861024365,
-    lng: -35.04304665161367
-  };
+  useEffect(() => {
+    if (pathname !== '/') setShowLocation(true)
+  }, [pathname]);
   
   return (
     <div className={styles.main}>
       <h2 className={styles.sub_title}>LOCALIZACAO</h2>
-      <p>Rua Praia do Amor, 48, B, Pipa - RN</p>
-      <button className={styles.button_drive}
-       onClick={() =>
-        handleRedirect('https://www.google.com/maps/dir//POUSADA+%26+HOSTEL+TOA+TOA+EM+PIPA+-+R.+Praia+do+Amor,+48,+Tibau+do+Sul+-+RN,+59178-000/@-6.23207,-35.0439185,18.58z/data=!4m8!4m7!1m0!1m5!1m1!1s0x7b28fb676dba819:0xa2acc91d07df4801!2m2!1d-35.0431498!2d-6.2316913')
+      <h3 className={styles.description}>
+        A 50 metros da Praia do Amor e 500 metros do centro de Pipa!
+      </h3>
+        {showLocation &&
+        <p>
+        Estamos muito bem localizados ao lado da natureza e perto do centro, mas protegidos do barulho da cidade e agitação das noitadas de Pipa.
+        Nossa rua é o único acesso a Praia do Amor.
+        Chegando aqui, o recomendado é deixar o carro em nosso estacionamento e fazer tudo a pé: caminhadas, passeios e botecagem.
+        Nossos vizinhos são nosso amigos e oferecem todos os serviços complementares a sua estadia: padarias, restaurantes, mercados, farmácias, bancos, lojas e outras conveniências.
+        Durante o dia, banhistas, surfistas e sofistas desfilam em nossa rua. Cai a noite e o único som é do das ondas do mar batendo nas falésias. 
+      </p>
       }
-      >FAZER ROTA</button>
+      <div className={styles.grid}>
+        <ButtonDrive/>
+        <Link className={styles.button_drive}
+        href='/como_chegar'
+        >COMO CHEGAR</Link>
+      </div>
       <div className={styles.grid}>
         <div className={styles.grid}>
-          <LoadScript
-            googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
-          >
-            <GoogleMap
-              mapContainerStyle={containerStyle}
-              center={center}
-              zoom={15}
-            >
-              <Marker position={center}/>
-            </GoogleMap>
-          </LoadScript>
+        <Map />
         </div>
       </div>
+      <p>Rua Praia do Amor, 48, B, Pipa - RN</p>
     </div>
     );
   }
 
 export default Localizacao;
-
-// https://www.youtube.com/watch?v=9e-5QHpadi0
