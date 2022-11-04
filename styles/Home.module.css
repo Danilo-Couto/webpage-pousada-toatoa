@@ -34,6 +34,20 @@
   max-width: 300px;
 }
 
+.button_drive {
+  background-color:blue;
+  color: white;
+  font-size: large;
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+
 .grid {
   display: flex;
   align-items: center;
@@ -166,7 +180,7 @@
   flex-grow: 1;
 }
 
-.logo, .button_booknow, .back_to_top { 
+.logo, .button_booknow, .button_drive, .back_to_top { 
   cursor: pointer;
 }
 
