@@ -1,11 +1,11 @@
 import styles from '../../../styles/Home.module.css'
 import Footer from '../../components/Footer/footer'
+import Galeria from '../../components/Galeria/galeria'
 import Header from '../../components/Header/header'
-import Galeria from '../../components/Quartos/quartos'
-import { IMAGES } from '../../consts/images'
+import { EXTERNAL } from '../../consts/images'
 
 export default function Home({galeria}) {
-  console.log(IMAGES)
+  console.log(galeria)
   return (
     <div className={styles.container}>
       <Header/>
@@ -18,7 +18,8 @@ export default function Home({galeria}) {
 export async function getStaticProps() {
   return {
       props: {
-        galeria: IMAGES
+        galeria: EXTERNAL
       }
   }
 }
+
