@@ -4,10 +4,9 @@
 
 .header {
   display: flex;
-  flex: 1;
   padding: 1rem;
   justify-content:space-between;
-  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -150,8 +149,7 @@
 
 .logo {
   width:5%;
-  height:5%;
-  object-fit:cover;
+  height:auto;
 }
 
 .back_to_top {

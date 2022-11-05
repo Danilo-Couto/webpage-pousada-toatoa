@@ -1,5 +1,5 @@
 import styles from '../../../styles/Home.module.css'
-import { particulares, taxistas } from '../../como_chegar_const';
+import { particulares, taxistas } from '../../consts/como_chegar_const';
 import ButtonDrive from '../../components/Buttons/bookDrive';
 import Footer from '../../components/Footer/footer';
 import Header from '../../components/Header/header';

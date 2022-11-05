@@ -1,8 +1,8 @@
-import por_do_sol from '../public/images/hospedagem praia do amor - toa toa20220903_110900~2-01.jpeg'
-import floresta from '../public/images/hospedagem praia do amor - toa toa20220903_100658~2-01.jpeg'
-import chales_da_paz from '../public/images/hospedagem praia do amor - toa toa20220903_114450~2-01.jpeg'
-import da_onda from '../public/images/hospedagem praia do amor - toa toa20220903_092924~2-01.jpeg'
-import do_ceu from '../public/images/hospedagem praia do amor - toa toa20220903_102925~2-01.jpeg'
+import por_do_sol from '../../public/images/hospedagem praia do amor - toa toa20220903_110900~2-01.jpeg'
+import floresta from '../../public/images/hospedagem praia do amor - toa toa20220903_100658~2-01.jpeg'
+import chales_da_paz from '../../public/images/hospedagem praia do amor - toa toa20220903_114450~2-01.jpeg'
+import da_onda from '../../public/images/hospedagem praia do amor - toa toa20220903_092924~2-01.jpeg'
+import do_ceu from '../../public/images/hospedagem praia do amor - toa toa20220903_102925~2-01.jpeg'
 
 const subtituloSuite = 'PRIVATIVO 2 A 4 PESSOAS'
 const subtituloAptos = 'PRIVATIVO 4 A 6 PESSOAS'

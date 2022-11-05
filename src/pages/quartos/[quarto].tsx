@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Footer from '../../components/Footer/footer'
 import Header from '../../components/Header/header'
 import styles from '../../../styles/Home.module.css'
-import { rooms } from '../../rooms_const'
+import { rooms } from '../../consts/rooms_const'
 import Quarto from '../../components/Quarto/quarto'
 
 export default function Quartos ({quarto}) {

@@ -6,7 +6,6 @@ import Otas from '../Otas/otas';
 import Quartos from '../Quartos/quartos';
 
 export default function MainPage({quartos, feed}) {
-  // console.log('main', feed)
   return (
     <main>
       <Intro />
