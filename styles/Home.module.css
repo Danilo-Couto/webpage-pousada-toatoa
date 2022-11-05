@@ -139,6 +139,12 @@
   height:auto;
 }
 
+.img_galery {
+  width:auto;
+  height:300px;
+  margin: 1rem;
+}
+
 .icons {
   display: flex;
   justify-content: center;
