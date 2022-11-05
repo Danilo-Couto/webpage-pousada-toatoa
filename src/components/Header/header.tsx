@@ -15,7 +15,7 @@ function Header() {
           height={100}
         />
         </Link>
-        <Link href="/reservar">RESERVAS  </Link>
+        <Link href="/reservas">RESERVAS  </Link>
         <Link href="/quartos">QUARTOS </Link>
         <Link href="/localizacao"> LOCALIZAÇÃO  </Link>
         <Link href="/galeria">GALERIA  </Link>
