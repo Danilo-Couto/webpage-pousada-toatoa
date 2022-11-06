@@ -1,4 +1,5 @@
 import styles from '../../../styles/Home.module.css'
+import RatingsBooking from './booking';
 
 function Avaliacoes(ratings) {
   return (
@@ -6,7 +7,7 @@ function Avaliacoes(ratings) {
       <h2 className={styles.sub_title}>AVALIAÇÕES</h2>
       <div className={styles.grid}>
         <div>
-          {!ratings ? 'ratings' : <p></p>}    
+          {!ratings ? 'ratings' : <RatingsBooking/>}    
         </div>
       </div>
     </div>
