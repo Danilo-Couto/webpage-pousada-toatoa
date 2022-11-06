@@ -1,4 +1,5 @@
 import { AZUL, BRANCO, LARANJA, ROSA, VERDE } from "./images"
+import { otas } from "./otas"
 
 const subtituloSuite = 'PRIVATIVO 2 A 4 PESSOAS'
 const subtituloAptos = 'PRIVATIVO 4 A 6 PESSOAS'
@@ -45,7 +46,8 @@ export const rooms = [
         items: itemsSuite,
         src: LARANJA,
         alt: 'SUÍTE POR DO SOL - POUSADA TOA TOA EM PIPA',
-        href: 'quartos/laranja'
+        href: 'quartos/laranja',
+        book: otas.laranja
     },
     {
         name: 'verde',
@@ -56,7 +58,8 @@ export const rooms = [
         items: itemsSuite,
         src: VERDE,
         alt: 'SUÍTE FLORESTA - POUSADA TOA TOA EM PIPA',
-        href: 'quartos/verde'
+        href: 'quartos/verde',
+        book: otas.verde
     },
     {
         name: 'azul',
@@ -67,7 +70,8 @@ export const rooms = [
         items: itemsAptos,
         src: AZUL,
         alt: 'APTO DO CÉU - POUSADA TOA TOA EM PIPA',
-        href: 'quartos/azul'
+        href: 'quartos/azul',
+        book: otas.azul
     },
     {
         name: 'rosa',
@@ -78,7 +82,8 @@ export const rooms = [
         items: itemsAptos,
         src: ROSA,
         alt: 'APTO DA ONDA - POUSADA TOA TOA EM PIPA',
-        href: 'quartos/rosa'
+        href: 'quartos/rosa',
+        book: otas.rosa
     },
     {
         name: 'branco',
@@ -89,6 +94,7 @@ export const rooms = [
         items: itemsChales,
         src: BRANCO,
         alt: 'CHALE DA PAZ - POUSADA TOA TOA EM PIPA',
-        href: 'quartos/branco'
+        href: 'quartos/branco',
+        book: otas.branco
     }
 ]

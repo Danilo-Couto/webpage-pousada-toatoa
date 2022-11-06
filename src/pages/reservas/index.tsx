@@ -2,6 +2,7 @@ import { AiOutlineWhatsApp } from 'react-icons/ai';
 import styles from '../../../styles/Home.module.css'
 import Footer from '../../components/Footer/footer';
 import Header from '../../components/Header/header';
+import Otas from '../../components/Otas/otas';
 import { handleRedirect } from '../../helpers';
 
 export default function Reservas() {
@@ -12,12 +13,7 @@ export default function Reservas() {
         <h2 className={styles.sub_title}>
           Reservas direto pelo whatsapp 19 997484772
         </h2>
-        <AiOutlineWhatsApp
-          className={styles.logo}
-          onClick={() =>
-            handleRedirect('https://wa.me/message/P7Y6BQIEU6KTO1')
-          }
-        />
+        <Otas/>
       </div>
       <Footer/>
     </div>
