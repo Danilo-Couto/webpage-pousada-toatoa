@@ -10,17 +10,11 @@ function Galeria({galeria}) {
         Estacionamento - Piscina - Cozinha Compartilhada - Wi-Fi - Chuveiro Externo - Lounge Social com Rede, TV, Sofá e Cafézinho.
       </h3>
       <div className={styles.grid}>
-        {/* <Image 
-          width={100}
-          height={100}
-          src={mypic}
-          alt={mypic}
-        /> */}
-        {galeria.map((e, i)=> ( 
+        {galeria.images.map((e, i)=> ( 
           <img
           className={styles.img_galery}
           key={i}
-          src={e.src}
+          src={e}
           alt={e.src}
           />
         ))}

@@ -19,8 +19,8 @@ function Quartos({quartos}) {
           >
           <h2>{e.title}</h2>
           <p> {e.subtitulo} </p>
-          <Image
-          src={e.src}
+          <img
+          src={e.src.cover}
           alt={e.title}
           className={styles.img_card}
           />

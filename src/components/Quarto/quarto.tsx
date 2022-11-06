@@ -14,11 +14,14 @@ function Quarto({quarto}) {
             {quarto.items.map((item, i) => 
             <li key={i}> {item} </li>)}
           </ul>
-          <Image
-          src={quarto.src}
-          alt={quarto.title}
-          className={styles.rooms}
-          />
+          {quarto.src.images.map((item, i) => 
+            <img
+            key={i}
+            src={item}
+            alt={quarto.title}
+            className={styles.rooms}
+            />
+          )}
         </div>
       </div>
     </div>

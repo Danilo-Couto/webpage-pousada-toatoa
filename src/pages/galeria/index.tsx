@@ -5,7 +5,6 @@ import Header from '../../components/Header/header'
 import { EXTERNAL } from '../../consts/images'
 
 export default function Home({galeria}) {
-  console.log(galeria)
   return (
     <div className={styles.container}>
       <Header/>

@@ -1,8 +1,4 @@
-import por_do_sol from '../../public/images/hospedagem praia do amor - toa toa20220903_110900~2-01.jpeg'
-import floresta from '../../public/images/hospedagem praia do amor - toa toa20220903_100658~2-01.jpeg'
-import chales_da_paz from '../../public/images/hospedagem praia do amor - toa toa20220903_114450~2-01.jpeg'
-import da_onda from '../../public/images/hospedagem praia do amor - toa toa20220903_092924~2-01.jpeg'
-import do_ceu from '../../public/images/hospedagem praia do amor - toa toa20220903_102925~2-01.jpeg'
+import { AZUL, BRANCO, LARANJA, ROSA, VERDE } from "./images"
 
 const subtituloSuite = 'PRIVATIVO 2 A 4 PESSOAS'
 const subtituloAptos = 'PRIVATIVO 4 A 6 PESSOAS'
@@ -47,7 +43,7 @@ export const rooms = [
         description: 'A suíte laranja, ou colocada de maneira mais poética, nossa Suíte Por do Sol fica no 1o andar com saída exclusiva para o jardim.',
         subDescription: descriptionSuite,
         items: itemsSuite,
-        src: por_do_sol,
+        src: LARANJA,
         alt: 'SUÍTE POR DO SOL - POUSADA TOA TOA EM PIPA',
         href: 'quartos/laranja'
     },
@@ -58,7 +54,7 @@ export const rooms = [
         description: 'A suíte verde, ou colocada de maneira mais poética, nossa Suíte Floresta fica no 2o andar com vista para a mata.',
         subDescription: descriptionSuite,
         items: itemsSuite,
-        src: floresta,
+        src: VERDE,
         alt: 'SUÍTE FLORESTA - POUSADA TOA TOA EM PIPA',
         href: 'quartos/verde'
     },
@@ -69,7 +65,7 @@ export const rooms = [
         description: 'Opção no 1o andar com saída exclusiva para jardim.',
         subDescription: descriptionAptos,
         items: itemsAptos,
-        src: do_ceu,
+        src: AZUL,
         alt: 'APTO DO CÉU - POUSADA TOA TOA EM PIPA',
         href: 'quartos/azul'
     },
@@ -80,7 +76,7 @@ export const rooms = [
         description: 'Opção no 2o andar com vista para a mata.',
         subDescription: descriptionAptos,
         items: itemsAptos,
-        src: da_onda,
+        src: ROSA,
         alt: 'APTO DA ONDA - POUSADA TOA TOA EM PIPA',
         href: 'quartos/rosa'
     },
@@ -91,7 +87,7 @@ export const rooms = [
         description: 'Chalé Triplo, ou colocada de maneira mais poética, nosso Chalé da Paz fica no 1a andar.',
         subDescription: descriptionChales,
         items: itemsChales,
-        src: chales_da_paz,
+        src: BRANCO,
         alt: 'CHALE DA PAZ - POUSADA TOA TOA EM PIPA',
         href: 'quartos/branco'
     }
