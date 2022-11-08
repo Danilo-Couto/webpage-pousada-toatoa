@@ -6,9 +6,9 @@ function Otas() {
       <div className={styles.main}>
         <h2 className={styles.sub_title}>CANAIS DE RESERVA</h2>
         <div className={styles.otas}>
-          {/* <h3 className={styles.description}>Mas garantimos 10% de desconto reservando diretamente conosco</h3> */}
           <BookNowButton/>
           <OtasButton/>
+          {/* <h3 className={styles.description}>Mas garantimos 10% de desconto reservando diretamente conosco</h3> */}
         </div>
       </div>
   );

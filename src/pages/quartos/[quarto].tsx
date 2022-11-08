@@ -8,7 +8,9 @@ export default function Quartos ({quarto}) {
   return(
     <div className={styles.container}>
     <Header/>
-    < Quarto quarto={quarto} />
+    <div className={styles.main}>
+        <Quarto quarto={quarto} />
+    </div>
     <Footer />
   </div>
   )
@@ -17,14 +19,12 @@ export default function Quartos ({quarto}) {
 export async function getStaticProps({ params }) {
   const cor = params.quarto;
   const quarto = rooms.filter(room => room.name === cor)[0]
-
   return {
     props: {
       quarto
     }
   }
 }
-
 
 export function getStaticPaths() {
   const paths = rooms.map(room => {

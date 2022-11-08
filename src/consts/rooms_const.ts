@@ -5,7 +5,7 @@ const subtituloSuite = 'PRIVATIVO 2 A 4 PESSOAS'
 const subtituloAptos = 'PRIVATIVO 4 A 6 PESSOAS'
 const subtituloChales = 'PRIVATIVO 1 A 3 PESSOAS'
 
-const descriptionSuite = 'Aconchegante e minimalista acomoda até 4 pessoas, tendo uma cama de casal, um beliche, banheiro privativo com chuveiro elétrico, ar-condicionado, varanda com rede e saída exclusiva para nosso jardim. Perfeito para relaxar após um dia cheio de atividades como surf, caminhadas e passeios.' 
+const descriptionSuite = 'Aconchegante e minimalista acomoda até 4 pessoas. Tem banheiro privativo com chuveiro elétrico, ar-condicionado e varanda com rede. Perfeito para relaxar após um dia cheio de atividades como surf, caminhadas e passeios.' 
 const descriptionAptos = 'Nossa opção para grupos e famílias. 2 ambientes: um com cama de casal e outro com 2 beliches. Ar-condicionado, banheiro privativo e varanda com rede.' 
 const descriptionChales = 'Nossa opção de entrada, a mais economica. Ventilador e banheiro privativo. Para até 3 pessoas: 1 cama de casal + 1 beliche.' 
 
@@ -41,7 +41,7 @@ export const rooms = [
         name: 'laranja',    
         title: 'SUÍTE POR DO SOL',
         subtitulo: subtituloSuite,
-        description: 'A suíte laranja, ou colocada de maneira mais poética, nossa Suíte Por do Sol fica no 1o andar com saída exclusiva para o jardim.',
+        description: 'Localizada no 1o andar com saída exclusiva para o jardim.',
         subDescription: descriptionSuite,
         items: itemsSuite,
         src: LARANJA,

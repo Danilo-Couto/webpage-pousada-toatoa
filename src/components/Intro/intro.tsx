@@ -16,11 +16,8 @@ function Intro() {
           BEM VINDO A POUSADA TOA TOA EM PIPA!
         </h1>
         <h2 className={styles.sub_title}>
-          A CASA DE PRAIA DOS SURFISTAS, APAIXONADOS E VIAJANTES
+        A 50 METROS DA PRAIA DO AMOR E 550 METROS DO CENTRO
         </h2>  
-        <h2>
-          A 50 METROS DA PRAIA DO AMOR E 550 METROS DO CENTRO
-        </h2>
       <BookNowButton/>
       </div>
     </div>

@@ -10,7 +10,7 @@
 }
 
 .main {
-  /* flex: 1; */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +48,6 @@
   background-color:white;
   color: black;
   font-size: large;
-  margin-top: 6rem;
   padding: 1rem;
   text-align: center;
   border-radius: 10px;
@@ -60,12 +59,14 @@
 .button_booknow:focus,
 .button_booknow:active {
   color:white;
-  background-color: black;
+  background-color: red;
+  transition: color 0.15s ease;
+  border-color: red;
 }
 
 .description {
   font-size: 1.5rem;
-  color: rgb(51, 51, 51);
+  color: rgb(73, 73, 73);
   text-align: center;
 }
 
@@ -80,10 +81,6 @@
 
 .card {
   margin: 1rem;
-  /* padding: 1.5rem; */
-  /* border: 1px solid #eaeaea; */
-  /* border-radius: 10px; */
-  /* max-width: 30%; */
   text-align: center;
   transition: color 0.15s ease, border-color 0.15s ease;
   position: relative;
@@ -91,53 +88,132 @@
 
 .img_card {
   filter: brightness(75%)
-  /* width:100%; */
 }
 
 .card:hover,
 .card:focus,
-.card:active,
-.back_to_top:hover {
+.card:active {
   filter: brightness(125%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.otas {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.otas_card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.otas_card:hover,
+.otas_card:focus,
+.otas_card:active {
+  color:white;
+  background-color: red;
+  transition: color 0.15s ease;
+}
+
+.img_feed {
+  width:400px;
+  height:auto;
+  padding: 0.1em;
+}
+
 .button_drive {
-  background-color:blue;
+  background-color:orange;
   color: white;
   font-size: large;
   margin: 1rem;
   padding: 1.5rem;
-  text-align: center;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
 }
 
-.main_room {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.button_drive:hover,
+.button_drive:focus,
+.button_drive:active {
+  color:orange;
+  background-color: white;
+  transition: color 0.15s ease;
 }
 
-.room {
+.footer {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  border-top: 1px solid #eaeaea;
+  align-items: center;
+}
+
+/* .footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+} */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  width:50%;
+  height:auto;
+}
+
+.back_to_top {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 150px;
+}
+
+.logo {
+  width:5%;
+  height:auto;
+}
+
+.main_room {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   align-items: left;
   margin: 1rem;
   max-width: 50%;
+  position: 'relative';
 }
 
-.otas {
+.grid_room {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.grid_img_room {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.room_img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img_galery {
+  margin: 0.1rem;
+  width: 33%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card p {
@@ -146,53 +222,11 @@
   line-height: 1.5;
 }
 
-.footer {
+.main_ratings {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 2rem;
-  border-top: 1px solid #eaeaea;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
-}
-
-.img_feed {
-  width:25%;
-  height:auto;
-}
-
-.img_galery {
-  width:auto;
-  height:300px;
-  margin: 1rem;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-  width:100%;
-  height:auto;
-}
-
-.logo {
-  width:5%;
-  height:auto;
-}
-
-.back_to_top {
-  margin: 1rem;
-  padding: 1.5rem;
-  border: 1px solid #eaeaea;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 150px;
-  cursor: inherit;
 }
 
 .main_rooms {

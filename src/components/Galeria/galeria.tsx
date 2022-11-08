@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from '../../../styles/Home.module.css'
 
 function Galeria({galeria}) {
@@ -11,7 +12,9 @@ function Galeria({galeria}) {
       </h3>
       <div className={styles.grid}>
         {galeria.images.map((e, i)=> ( 
-          <img
+          <Image
+          width={500}
+          height={300}
           className={styles.img_galery}
           key={i}
           src={e}
