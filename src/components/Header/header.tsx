@@ -22,9 +22,9 @@ function Header() {
       <Link href="/localizacao"> LOCALIZAÇÃO  </Link>
       <Link href="/galeria">GALERIA  </Link>
       <Link href="/avaliacoes">AVALIAÇÕES  </Link>
-      <Link href="/passeios_pagos">PASSEIOS PAGOS </Link>
+      {/* <Link href="/passeios_pagos">PASSEIOS PAGOS </Link>
       <Link href="/passeios_gratis">PASSEIOS SEM GUIAS </Link>
-      <Link href="/faq">FAQ  </Link>
+      <Link href="/faq">FAQ  </Link> */}
       <Link href="/como_chegar"> COMO CHEGAR </Link>
     </div>
  );
