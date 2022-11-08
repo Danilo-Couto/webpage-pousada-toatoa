@@ -1,36 +1,105 @@
 .container {
-  padding: 0 2rem;
+  padding: 2rem 2rem;
 }
 
 .header {
   display: flex;
-  padding: 1rem;
   justify-content:space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .main {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-top: 1px solid #eaeaea;
+  position: relative;
   margin: 1rem;
 }
 
-.button_booknow {
-  background-color:red;
+.titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-size: large;
-  margin: 1rem;
-  padding: 1.5rem;
+  width: 95%;
   text-align: center;
-  border: 1px solid #eaeaea;
+  z-index: 1;
+}
+
+.title{
+  font-size: 5rem;
+}
+
+.sub_title{
+  font-size: 3rem;
+}
+
+.img_main {
+  width:120%;
+  max-height:700px;
+  filter: brightness(75%)
+}
+
+.button_booknow {
+  background-color:white;
+  color: black;
+  font-size: large;
+  margin-top: 6rem;
+  padding: 1rem;
+  text-align: center;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+}
+
+.button_booknow:hover,
+.button_booknow:focus,
+.button_booknow:active {
+  color:white;
+  background-color: black;
+}
+
+.description {
+  font-size: 1.5rem;
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+.card {
+  margin: 1rem;
+  /* padding: 1.5rem; */
+  /* border: 1px solid #eaeaea; */
+  /* border-radius: 10px; */
+  /* max-width: 30%; */
+  text-align: center;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  position: relative;
+}
+
+.img_card {
+  filter: brightness(75%)
+  /* width:100%; */
+}
+
+.card:hover,
+.card:focus,
+.card:active,
+.back_to_top:hover {
+  filter: brightness(125%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button_drive {
@@ -46,34 +115,11 @@
   max-width: 300px;
 }
 
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin: 1rem;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: center;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
 .main_room {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 .room {
   display: flex;
@@ -116,39 +162,6 @@
   flex-grow: 1;
 }
 
-.title{
-  color: red;
-  font-size: 4rem;
-}
-
-.sub_title{
-  color: purple;
-  font-size: 2rem;
-  text-decoration: none;
-}
-
-.description {
-  font-size: 1.5rem;
-}
-
-.title,
-.sub_title,
-.description {
-  text-align: center;
-}
-
-.img_main {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-.img_card {
-  width:100%;
-  height:100%;
-  object-fit: cover;
-}
-
 .img_feed {
   width:25%;
   height:auto;
@@ -179,7 +192,7 @@
   border: 1px solid #eaeaea;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 150px;
-  /* cursor: inherit; */
+  cursor: inherit;
 }
 
 .main_rooms {
@@ -200,31 +213,6 @@
 
 .logo, .button_booknow, .button_drive, .back_to_top { 
   cursor: pointer;
-}
-
-.button_booknow:hover,
-.button_booknow:focus,
-.button_booknow:active {
-  color:red;
-  background-color: white;
-  border-color: red;
-}
-
-.card:hover,
-.card:focus,
-.card:active,
-.back_to_top:hover {
-  color: black;
-  border-color: black;
-}
-
-.sub_title a:hover
-.sub_title a:focus,
-.sub_title a:active,
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
 }
 
 @media (max-width: 600px) {

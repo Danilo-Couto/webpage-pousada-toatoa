@@ -14,16 +14,18 @@ function Header() {
           width={100}
           height={100}
         />
-        </Link>
-        <Link href="/reservas">RESERVAS  </Link>
-        <Link href="/quartos">QUARTOS </Link>
-        <Link href="/localizacao"> LOCALIZAÇÃO  </Link>
-        <Link href="/galeria">GALERIA  </Link>
-        <Link href="/avaliacoes">AVALIAÇÕES  </Link>
-        <Link href="/passeios_pagos">PASSEIOS PAGOS </Link>
-        <Link href="/passeios_gratis">PASSEIOS SEM GUIAS </Link>
-        <Link href="/faq">FAQ  </Link>
-        <Link href="/como_chegar"> COMO CHEGAR </Link>
+      </Link>
+      <Link href="/"> </Link>
+      <Link href="/"> </Link>
+      <Link href="/reservas">RESERVAS  </Link>
+      <Link href="/quartos">QUARTOS </Link>
+      <Link href="/localizacao"> LOCALIZAÇÃO  </Link>
+      <Link href="/galeria">GALERIA  </Link>
+      <Link href="/avaliacoes">AVALIAÇÕES  </Link>
+      <Link href="/passeios_pagos">PASSEIOS PAGOS </Link>
+      <Link href="/passeios_gratis">PASSEIOS SEM GUIAS </Link>
+      <Link href="/faq">FAQ  </Link>
+      <Link href="/como_chegar"> COMO CHEGAR </Link>
     </div>
  );
 }

@@ -14,12 +14,17 @@ function Quartos({quartos}) {
       <div className={styles.grid}>
         {quartos.map((e, i)=> ( 
           <Link
+          className={styles.card}
           key = {i}
-          href={e.href} className={styles.card}
+          href={e.href} 
           >
-          <h2>{e.title}</h2>
-          <p> {e.subtitulo} </p>
-          <img
+          <div className={styles.titles}>
+            <h2>{e.title}</h2>
+            <p> {e.subtitulo} </p>
+          </div>
+          <Image
+          width={500}
+          height={300}
           src={e.src.cover}
           alt={e.title}
           className={styles.img_card}
