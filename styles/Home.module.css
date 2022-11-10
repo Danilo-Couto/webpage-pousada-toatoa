@@ -204,6 +204,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .room_img{
@@ -238,11 +239,18 @@
   max-width: 35%;
 }
 
-.rooms {
+.getting_there_item {
   display: flex;
-  width:50%;
-  height:auto;
-  flex-grow: 1;
+  flex-direction: column;
+  width:46%;
+  text-align: center;
+  justify-content: center;
+  margin: 2rem;
+  border: 1px solid #eaeaea;
+}
+
+.ul_no_bullets{
+  list-style-type: none;
 }
 
 .logo, .button_booknow, .button_drive, .back_to_top { 

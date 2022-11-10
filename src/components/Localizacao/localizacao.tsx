@@ -19,7 +19,7 @@ function Localizacao() {
     <div className={styles.main}>
       <h2 className={styles.sub_title}>LOCALIZACAO</h2>
       <h3 className={styles.description}>
-        A 50 metros da Praia do Amor e 500 metros do centro de Pipa!
+        A 50 METROS DA PRAIA DO AMOR E 500 METROS DO CENTRO DE PIPA!
       </h3>
         {showLocation &&
         <p className={styles.description}>
@@ -34,6 +34,13 @@ function Localizacao() {
         Durante o dia, banhistas, surfistas e sofistas desfilam em nossa rua. Cai a noite e o único som é do das ondas do mar batendo nas falésias. 
       </p>
       }
+      <h3 className={styles.description}>AEROPORTOS</h3>
+      <p className={styles.description}>
+      O <b>Aeroporto de Natal </b>, Aeroporto Governador Aluízio Alves, fica na verdade em São Gonçalo do Amarante, e esta <b>a 116 km de Pipa</b>.
+      <p className={styles.description}>
+      Já o <b>Aeroporto de Joao Pessoa</b>, Castro Pinto, esta localizado a <b>141km</b> daqui daqui.
+      </p>
+            </p>
       <div className={styles.grid}>
         <ButtonDrive/>
         <Link
