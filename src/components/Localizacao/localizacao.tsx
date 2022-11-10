@@ -37,10 +37,10 @@ function Localizacao() {
       <h3 className={styles.description}>AEROPORTOS</h3>
       <p className={styles.description}>
       O <b>Aeroporto de Natal </b>, Aeroporto Governador Aluízio Alves, fica na verdade em São Gonçalo do Amarante, e esta <b>a 116 km de Pipa</b>.
+      </p>
       <p className={styles.description}>
       Já o <b>Aeroporto de Joao Pessoa</b>, Castro Pinto, esta localizado a <b>141km</b> daqui daqui.
       </p>
-            </p>
       <div className={styles.grid}>
         <ButtonDrive/>
         <Link
@@ -56,6 +56,7 @@ function Localizacao() {
           height={500}
           src={location}
           alt={'localizacao pousada toatoa pipa'}
+          className={styles.img_main}
         />
         {/* <Map /> */}
         </div>
