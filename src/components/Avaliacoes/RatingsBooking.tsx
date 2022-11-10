@@ -5,13 +5,13 @@ function RatingsBooking() {
   return (
     <div className={styles.main_ratings}>
       <Image
-        src='/nota booking.png'
+        src='/nota booking.jpg'
         alt="Nota Toa Toa Em Pipa"
         width={225}
         height={100}
       />
       <Image
-        src='/notas_detalhes.png'
+        src='/notas_detalhes.jpg'
         alt="Nota Toa Toa Em Pipa"
         width={1000}
         height={250}

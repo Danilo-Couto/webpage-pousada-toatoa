@@ -9,7 +9,7 @@ export default function Reservas() {
   return (
     <div className={styles.container}>
       <Header/>
-        <Otas/>
+      <Otas/>
       <Footer/>
     </div>
   );

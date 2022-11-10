@@ -12,17 +12,7 @@ export default function Home() {
         <h2 className={styles.sub_title}>COMO CHEGAR</h2>
         <h3>DE CARRO</h3>
         <ButtonDrive/>
-        {/* <h3>AEROPORTOS</h3>
-        <p>
-        O Aeroporto de Natal, Aeroporto Governador Aluízio Alves, fica na verdade em São Gonçalo do Amarante, e esta a 116 km de Pipa.
-        <br/>
-        Já o Aeroporto de Joao Pessoa, Castro Pinto, esta localizado a 141km daqui daqui
-        <br/>
-        Portanto, nosso ponto de partida será essas cidades
-        </p> */}
-
       <div className={styles.grid_img_room}>
-
         <div className={styles.getting_there_item}>
           <h3>TÁXI</h3>
           <p>
@@ -37,7 +27,6 @@ export default function Home() {
           ))}
           </ul>
         </div>
-
         <div className={styles.getting_there_item}>
           <h3>VAN PARTICULAR</h3>
           <ul className={styles.ul_no_bullets}>
@@ -46,7 +35,6 @@ export default function Home() {
             ))}
           </ul>
         </div>
-
         <div className={styles.getting_there_item}>
           <h3>VAN LOCAL (Goianinha-Pipa/ Pipa-Goianinha)</h3>
           <p>
@@ -58,7 +46,6 @@ export default function Home() {
           * Muito usada também para ir para as praias vizinhas, como a Praia do Madeiro, Cacimbinhas, Tibau do Sul e Sibaúma.
           </p>      
         </div>
-
         <div className={styles.getting_there_item}>
           <h3>MICRO-ONIBUS (Natal - Pipa / Pipa - Natal)
           </h3>
@@ -92,8 +79,6 @@ export default function Home() {
           <h5>Domingos e Feriados</h5>
           07:20 - 09:30 - 15:20
         </div>
-        
-
       </div>
     </div>
     <Footer/>
