@@ -15,7 +15,7 @@ function RatingsBooking() {
         alt="Nota Toa Toa Em Pipa"
         width={1000}
         height={250}
-        className={styles.img_main}
+        className={styles.img_general}
       />
     </div>
     );
