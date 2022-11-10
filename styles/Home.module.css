@@ -46,6 +46,12 @@
   filter: brightness(70%)
 }
 
+.img_general {
+  width:100%;
+  object-fit: cover;
+  max-height:60rem;
+}
+
 .button_booknow {
   background-color:red;
   color: white;
@@ -157,13 +163,6 @@
   align-items: center;
 }
 
-/* .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-} */
-
 .icons {
   display: flex;
   justify-content: center;
@@ -260,10 +259,10 @@
 }
 
 
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
   .container {
     width: 100%;
-    /* flex-direction: column; */
+    flex-direction: column;
   }
 }
 
@@ -275,4 +274,4 @@
   .logo img {
     filter: invert(1);
   }
-}
+} */

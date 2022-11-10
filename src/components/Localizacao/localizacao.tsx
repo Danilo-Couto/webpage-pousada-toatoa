@@ -56,7 +56,7 @@ function Localizacao() {
           height={500}
           src={location}
           alt={'localizacao pousada toatoa pipa'}
-          className={styles.img_main}
+          className={styles.img_general}
         />
         {/* <Map /> */}
         </div>
