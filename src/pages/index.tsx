@@ -4,6 +4,8 @@ import MainPage from '../components/MainPage/mainpage'
 import Footer from '../components/Footer/footer'
 import Header from '../components/Header/header'
 import { rooms } from '../consts/rooms_const'
+import { useState } from 'react'
+import Burguer from '../components/Header/burguer'
 
 export default function Index({quartos, feed}) {
   return (

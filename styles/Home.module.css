@@ -10,6 +10,27 @@
   margin: 1rem;
 }
 
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: #eaeaea;
+  color: black;
+}
+
+.header a:active {
+  background-color: red;
+  color: white;
+}
+
 .main {
   flex: 1;
   display: flex;
@@ -37,6 +58,7 @@
 
 .sub_title{
   font-size: 3rem;
+  text-align: center;
 }
 
 .img_main {
@@ -58,18 +80,19 @@
   font-size: large;
   padding: 1rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
-}
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
 
 .button_booknow:hover,
 .button_booknow:focus,
 .button_booknow:active {
   color:red;
   background-color: white;
-  transition: color 0.15s ease;
-  /* border-color: red; */
 }
 
 .description {
@@ -140,11 +163,14 @@
   font-size: large;
   margin: 1rem;
   padding: 1.5rem;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
-}
+  border-radius: 20px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
 
 .button_drive:hover,
 .button_drive:focus,
@@ -167,7 +193,7 @@
   display: flex;
   justify-content: center;
   margin: 1rem;
-  width:50%;
+  width:70%;
   height:auto;
 }
 
@@ -258,20 +284,37 @@
   cursor: pointer;
 }
 
-
-/* @media (max-width: 1280px) {
-  .container {
+@media (max-width: 1200px) { 
+  .header{
+   display:none;
+  }
+  .header{
+   display:initial;
+  }
+  img.img_general {
     width: 100%;
-    flex-direction: column;
+    height: auto;
+  }
+  img.main_ratings {
+    width: 100%;
+    height: auto;
+  }
+
+  .title{
+    font-size: 3rem;
+  }
+  .sub_title{
+    font-size: 2rem;
+  }
+
+  .header {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-} */
+
