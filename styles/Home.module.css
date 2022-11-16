@@ -26,10 +26,10 @@
   color: black;
 }
 
-.header a:active {
+/* .header a:active {
   background-color: red;
   color: white;
-}
+} */
 
 .main {
   flex: 1;
@@ -88,9 +88,7 @@
   }
 
 
-.button_booknow:hover,
-.button_booknow:focus,
-.button_booknow:active {
+.button_booknow:hover {
   color:red;
   background-color: white;
 }
@@ -121,11 +119,9 @@
   filter: brightness(75%)
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  filter: brightness(125%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.card img:hover {
+  filter: brightness(100%);
+  color: black;
 }
 
 .otas {
@@ -143,9 +139,7 @@
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.otas_card:hover,
-.otas_card:focus,
-.otas_card:active {
+.otas_card:hover {
   color:white;
   background-color: red;
   transition: color 0.15s ease;
@@ -172,9 +166,7 @@
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   }
 
-.button_drive:hover,
-.button_drive:focus,
-.button_drive:active {
+.button_drive:hover {
   color:orange;
   background-color: white;
   transition: color 0.15s ease;
@@ -205,9 +197,19 @@
   max-width: 150px;
 }
 
+.back_to_top:hover{
+  filter: brightness(75%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .logo {
   width:5%;
   height:auto;
+}
+
+.logo:hover, .grid .icons:hover {
+  color:orange;
+  cursor: pointer;
 }
 
 .main_room {
@@ -280,7 +282,7 @@
   list-style-type: none;
 }
 
-.logo, .button_booknow, .button_drive, .back_to_top { 
+.button_booknow, .button_drive, .back_to_top { 
   cursor: pointer;
 }
 
