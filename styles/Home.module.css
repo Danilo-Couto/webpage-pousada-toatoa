@@ -1,5 +1,7 @@
 .container {
-  /* padding: 2rem 2rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .header {
@@ -26,11 +28,6 @@
   color: black;
 }
 
-/* .header a:active {
-  background-color: red;
-  color: white;
-} */
-
 .main {
   flex: 1;
   display: flex;
@@ -38,7 +35,13 @@
   align-items: center;
   border-top: 1px solid #eaeaea;
   position: relative;
-  margin: 1rem;
+}
+
+.img_main {
+  max-height:60rem;
+  filter: brightness(70%);
+  width:100%;
+  object-fit: cover;
 }
 
 .titles {
@@ -59,13 +62,6 @@
 .sub_title{
   font-size: 3rem;
   text-align: center;
-}
-
-.img_main {
-  width:100%;
-  object-fit: cover;
-  max-height:60rem;
-  filter: brightness(70%)
 }
 
 .img_general {
@@ -109,7 +105,7 @@
 }
 
 .card {
-  margin: 1rem;
+  margin: 0.5rem;
   text-align: center;
   transition: color 0.15s ease, border-color 0.15s ease;
   position: relative;
@@ -285,6 +281,7 @@
 .button_booknow, .button_drive, .back_to_top { 
   cursor: pointer;
 }
+
 
 @media (max-width: 1200px) { 
   .header{
