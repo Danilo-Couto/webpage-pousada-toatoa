@@ -48,7 +48,7 @@ function Localizacao() {
           href='/como_chegar'
         >COMO CHEGAR</Link>
       </div>
-      <div className={styles.grid}>
+      <div className={styles.main}>
         <p>Rua Praia do Amor, 48, B, Pipa - RN</p>
         <div className={styles.grid}>
         <Image

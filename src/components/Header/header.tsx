@@ -4,6 +4,8 @@ import styles from '../../../styles/Home.module.css'
 import logo from '../../../public/images/logo_hospedaria_toatoa_em_pipa.jpeg'
 
 
+
+
 function Header() {
   return (
     <div className={styles.header}>
