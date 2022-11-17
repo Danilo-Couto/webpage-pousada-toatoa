@@ -17,7 +17,7 @@ export default function Index({quartos, feed}) {
 }
 
 export async function getStaticProps() {
-  const instaUrl = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,username,timestamp&access_token=${process.env.NEXT_PUBLIC_ACESS_TOKEN}`
+  const instaUrl = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,username,timestamp&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_ACESS_TOKEN}`
   const data = await fetch(instaUrl);
   const dataJson = await data.json();
   const instaFeed = dataJson.data
