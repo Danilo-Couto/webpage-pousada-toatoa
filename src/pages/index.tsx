@@ -1,4 +1,4 @@
-import HeadComponent from '../components/Head/head'
+import HeadMain from '../components/Head/head'
 import styles from '../../styles/Home.module.css'
 import MainPage from '../components/MainPage/mainpage'
 import Footer from '../components/Footer/footer'
@@ -8,7 +8,7 @@ import { rooms } from '../consts/rooms_const'
 export default function Index({quartos, feed}) {
   return (
     <div className={styles.container}>
-      <HeadComponent />
+      <HeadMain />
       <Header />
       <MainPage quartos={quartos} feed={feed}/>     
       <Footer />
@@ -29,6 +29,3 @@ export async function getStaticProps() {
       }  
   }    
 }  
-
-
-// references: https://www.thebivvi-telluride.com/#the-bivouac

@@ -3,10 +3,14 @@ import { particulares, taxistas } from '../../consts/como_chegar_const';
 import ButtonDrive from '../../components/Buttons/bookDrive';
 import Footer from '../../components/Footer/footer';
 import Header from '../../components/Header/header';
+import HeadGettingHere from '../../components/Head/head_gettinghere';
+import Link from 'next/link';
+import BlablacarButton from '../../components/Buttons/blablacar';
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <HeadGettingHere/>
       <Header/>
       <div className={styles.main}>
         <h2 className={styles.sub_title}>COMO CHEGAR</h2>
@@ -35,6 +39,14 @@ export default function Home() {
             ))}
           </ul>
         </div>
+        <div className={styles.main}>
+          <h3>CARONA</h3>
+          <p>
+          Pegue uma carona com pessoas de confiaça, economize na viagem e ainda faça amizades
+          </p>
+          <BlablacarButton />
+        </div>
+
         <div className={styles.getting_there_item}>
           <h3>VAN LOCAL (Goianinha-Pipa/ Pipa-Goianinha)</h3>
           <p>
