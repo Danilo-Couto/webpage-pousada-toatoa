@@ -3,9 +3,8 @@ import { particulares, taxistas } from '../../consts/como_chegar_const';
 import ButtonDrive from '../../components/Buttons/bookDrive';
 import Footer from '../../components/Footer/footer';
 import Header from '../../components/Header/header';
-import HeadGettingHere from '../../components/Head/head_gettinghere';
-import Link from 'next/link';
 import BlablacarButton from '../../components/Buttons/blablacar';
+import HeadGettingHere from '../../components/Head/head_gettingthere';
 
 export default function Home() {
   return (
