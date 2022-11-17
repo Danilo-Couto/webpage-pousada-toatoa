@@ -5,8 +5,8 @@ function HeadGettingHere() {
     <Head>
     <title>Como chegar em Pipa</title>
     <meta
-     name="Saiba como vir de carro, onibus, van, táxi ou carona"
-     content="Temos todos os detalhes e contatos para voce nao se perder ao vir para Praia da Pipa."
+     name="description"
+     content="Saiba como vir de carro, onibus, van, táxi ou carona para Praia da Pipa."
     />
     <link rel="icon" href="/favicon.ico" />
     </Head>

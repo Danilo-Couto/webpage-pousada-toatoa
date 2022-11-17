@@ -5,8 +5,8 @@ function HeadRooms() {
     <Head>
     <title>Pousada Toa Toa Em Pipa</title>
     <meta
-     name="Suítes Para Casal e Quartos Para Famíla"
-     content="Quartos privativos para casais e grupos de até 6 pessoas. Todos com banheiro privativo com chuveiro elétrico, wifi, toalhas e roupas de cama."
+      name="description"
+      content="Suítes Para Casal e Quartos Para Famíla e Amigos. Ar-Condicionado, varanda com rede e vista, banheiro privativo com chuveiro elétrico, wifi, toalhas e roupas de cama."
     />
     <link rel="icon" href="/favicon.ico" />
     </Head>
