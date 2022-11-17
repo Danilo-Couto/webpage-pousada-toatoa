@@ -6,7 +6,7 @@ function Feed(feed) {
   return feed.slice(0, 8).map((obj, key) => {
     return (
       <div 
-        className={styles.grid}
+        className={styles.grid_room}
         key={key}
       >
         <a
@@ -32,14 +32,18 @@ function Instagram({feed}) {
     <div className={styles.main}>
       <h2 className={styles.sub_title}>INSTAGRAM</h2>
         {feed == null ? 
-      <div className={styles.grid}>
-        <AiOutlineInstagram
-          className={styles.icons}
-          onClick={() => handleRedirect('https://instagram.com/toatoa_pipa')}
-        />
-        <p>@TOATOA_PIPA</p>
+        <div className={styles.grid}>
+          <AiOutlineInstagram
+            className={styles.icons}
+            onClick={() => handleRedirect('https://instagram.com/toatoa_pipa')}
+          />
+          <p>@TOATOA_PIPA</p>
         </div> 
-       : Feed(feed) }    
+       :
+       <div className={styles.grid}>
+        {Feed(feed )} 
+      </div>
+       }    
     </div>
   );
 }
