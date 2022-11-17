@@ -158,10 +158,22 @@
   max-width: 300px;
   border-radius: 20px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
   border: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   }
+
+  .button_blablacar {
+    background-color:orange;
+    color: white;
+    font-size:small;
+    margin: 1rem;
+    padding: 0.5rem;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    border-radius: 20px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
 
 .button_drive:hover {
   color:orange;
