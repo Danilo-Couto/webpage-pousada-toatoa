@@ -23,8 +23,10 @@ function Quarto({quarto}) {
           <div></div>
         </div>        
       </div>
-      <div className={styles.main_room}>
-        <img
+      <div >
+        <Image
+          width={600}
+          height={400}
           className={styles.room_img}
           src={quarto.src.cover}
           alt={quarto.title}
@@ -33,17 +35,16 @@ function Quarto({quarto}) {
       <div className={styles.grid_img_room}>
         {quarto.src.images.map((item, i) => 
           <Image
-          width={600}
-          height={400}
-          key={i}
-          src={item}
-          alt={quarto.title}
-          className={styles.img_galery}
+            width={600}
+            height={400}
+            key={i}
+            src={item}
+            alt={quarto.title}
+            className={styles.img_galery}
           />
         )}        
       </div>
     </div>
-       
   );
 }
 

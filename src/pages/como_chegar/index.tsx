@@ -38,7 +38,7 @@ export default function Home() {
             ))}
           </ul>
         </div>
-        <div className={styles.main}>
+        <div className={styles.getting_there_item}>
           <h3>CARONA</h3>
           <p>
           Pegue uma carona com pessoas de confiaça, economize na viagem e ainda faça amizades
