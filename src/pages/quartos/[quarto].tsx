@@ -7,12 +7,12 @@ import Quarto from '../../components/Quarto/quarto'
 export default function Quartos ({quarto}) {
   return(
     <div className={styles.container}>
-    <Header/>
-    <div className={styles.main}>
+      <Header/>
+      <div className={styles.main}>
         <Quarto quarto={quarto} />
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
   )
 }
 

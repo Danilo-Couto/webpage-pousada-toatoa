@@ -6,7 +6,7 @@ import Header from '../../components/Header/header';
 
 export default function Reservas() {
   return (
-    <div className={styles.container}>
+    <div>
       <Header/>
       <div className={styles.main}>
         <h2 className={styles.sub_title}>AVALIAÇÕES</h2>
