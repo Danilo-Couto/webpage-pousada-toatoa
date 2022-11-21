@@ -9,8 +9,9 @@ Webpage for desktop and mobile screen for my own hotel business - http://pousada
 
     
 ### Some of the challenges
-Implement APIs
-
+  - Implement APIs
+  - CSS adjustments
+ 
 ### Implements in the future
   1. Improve Google Maps API application
   2. Booking API for ratings
