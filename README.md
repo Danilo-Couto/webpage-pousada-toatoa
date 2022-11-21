@@ -1,6 +1,6 @@
 # Website for Pousada Toa Toa em Pipa
 
-wbpage for desktop and mobile screen for my own hotel business - http://pousadaempipa.com.br/ 
+Webpage for desktop and mobile screen for my own hotel business - http://pousadaempipa.com.br/ 
   
 ### Stacks, Frameworks and Libs
   - NextJS
