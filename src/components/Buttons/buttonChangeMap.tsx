@@ -1,5 +1,4 @@
 import styles from '../../../styles/Home.module.css'
-import { handleRedirect } from '../../helpers';
 
 export default function ButtonChangeMap({showMaps, setShowMaps}) {
   return (
