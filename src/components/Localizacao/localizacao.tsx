@@ -1,20 +1,22 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import {useEffect, useState} from 'react';
 import styles from '../../../styles/Home.module.css'
 import ButtonDrive from '../Buttons/bookDrive';
+import ButtonChangeMap from '../Buttons/buttonChangeMap';
 import Map from './Map/map';
-import location from '../../../public/images/localizacao_pousada_toatoa_pipa.jpg'
+import StaticMap from './Map/StaticMap';
 
 function Localizacao() {
   const [showLocation, setShowLocation] = useState(false);
-  const {pathname} = useRouter()
+  const {pathname} = useRouter();
+  const [showMaps, setShowMaps] = useState(true);
   
   useEffect(() => {
     if (pathname !== '/') setShowLocation(true)
   }, [pathname]);
-  
+
+
   return (
     <div className={styles.main}>
       <h2 className={styles.sub_title}>LOCALIZACAO</h2>
@@ -47,18 +49,12 @@ function Localizacao() {
           className={styles.button_drive}
           href='/como_chegar'
         >COMO CHEGAR</Link>
+        <ButtonChangeMap showMaps={showMaps} setShowMaps={setShowMaps}/>
       </div>
       <div className={styles.main}>
         <p>Rua Praia do Amor, 48, B, Pipa - RN</p>
         <div className={styles.grid}>
-        <Image
-          width={2000}
-          height={500}
-          src={location}
-          alt={'localizacao pousada toatoa pipa'}
-          className={styles.img_general}
-        />
-        {/* <Map /> */}
+        { showMaps ? <Map /> : <StaticMap /> }
         </div>
       </div>
     </div>
