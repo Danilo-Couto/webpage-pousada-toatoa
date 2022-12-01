@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from '../../../styles/Home.module.css'
 import logo from '../../../public/images/logo_hospedaria_toatoa_em_pipa.jpeg'
+import { useRef } from "react";
 
 function Header() {
   return (
@@ -25,6 +26,8 @@ function Header() {
       <Link href="/passeios_gratis">PASSEIOS SEM GUIAS </Link>
       <Link href="/faq">FAQ  </Link> */}
       <Link href="/como_chegar"> COMO CHEGAR </Link>
+      <Link href="/reveillon"> REVEILLON 2023</Link>
+
     </div>
  );
 }

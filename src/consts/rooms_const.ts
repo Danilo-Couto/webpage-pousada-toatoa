@@ -47,6 +47,8 @@ export const rooms = [
         src: LARANJA,
         alt: 'SUÍTE POR DO SOL - POUSADA TOA TOA EM PIPA',
         href: 'quartos/laranja',
+        price: '3 DIAS por R$ 4.000',
+        price2: '5 DIAS por R$ 5.320',
         book: otas.laranja
     },
     {
@@ -59,6 +61,8 @@ export const rooms = [
         src: VERDE,
         alt: 'SUÍTE FLORESTA - POUSADA TOA TOA EM PIPA',
         href: 'quartos/verde',
+        price: '3 DIAS por R$ 4.800',
+        price2: '5 DIAS por R$ 6.400',
         book: otas.verde
     },
     {
@@ -71,6 +75,8 @@ export const rooms = [
         src: AZUL,
         alt: 'APTO DO CÉU - POUSADA TOA TOA EM PIPA',
         href: 'quartos/azul',
+        price: '3 DIAS por R$ 6.000',
+        price2: '5 DIAS por R$ 8.000',
         book: otas.azul
     },
     {
@@ -83,6 +89,8 @@ export const rooms = [
         src: ROSA,
         alt: 'APTO DA ONDA - POUSADA TOA TOA EM PIPA',
         href: 'quartos/rosa',
+        price: '3 DIAS por R$ 7.200',
+        price2: '5 DIAS por R$ 9.600',
         book: otas.rosa
     },
     {
@@ -95,6 +103,8 @@ export const rooms = [
         src: BRANCO,
         alt: 'CHALE DA PAZ - POUSADA TOA TOA EM PIPA',
         href: 'quartos/branco',
+        price: '3 DIAS por R$ 2.000',
+        price2: '5 DIAS por R$ 2.700',
         book: otas.branco
     }
 ]
