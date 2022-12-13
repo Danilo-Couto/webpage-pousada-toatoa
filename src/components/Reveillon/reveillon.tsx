@@ -42,8 +42,8 @@ function Reveillon({quartos}) {
       </div>
         <button
             className={styles.button_booknow}
-            onClick={() =>handleRedirect('https://wa.me/message/P7Y6BQIEU6KTO1')}
-            > RESERVAR JÁ!
+            onClick={() => handleRedirect('https://hbook.hsystem.com.br/Booking?companyId=632b13f5e819f634133f8f8a')}>
+            RESERVAR JÁ!
           </button>
     </div>
   );
