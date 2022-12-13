@@ -7,7 +7,7 @@
   justify-content:space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 1rem;
+  margin-top: 7rem;
 }
 
 .header a {
@@ -305,6 +305,7 @@
 @media (max-width: 1200px) { 
   .header{
    display:none;
+   margin-top: 12rem;
   }
   .header{
    display:initial;
