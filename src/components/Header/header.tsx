@@ -18,6 +18,7 @@ function Header() {
       <Link href="/"> </Link>
       <Link href="/"> </Link>
       <Link href="/reservas">RESERVAS  </Link>
+      {/* <Link href="https://hbook.hsystem.com.br/Booking?companyId=632b13f5e819f634133f8f8a">RESERVAS  </Link> */}
       <Link href="/quartos">QUARTOS </Link>
       <Link href="/localizacao"> LOCALIZAÇÃO  </Link>
       <Link href="/galeria">GALERIA  </Link>
@@ -26,7 +27,7 @@ function Header() {
       <Link href="/passeios_gratis">PASSEIOS SEM GUIAS </Link>
       <Link href="/faq">FAQ  </Link> */}
       <Link href="/como_chegar"> COMO CHEGAR </Link>
-      <Link href="/reveillon"> REVEILLON 2023</Link>
+      {/* <Link href="/reveillon"> REVEILLON 2023</Link> */}
 
     </div>
  );
