@@ -4,8 +4,12 @@ import MainPage from '../components/MainPage/mainpage'
 import Footer from '../components/Footer/footer'
 import Header from '../components/Header/header'
 import { rooms } from '../consts/rooms_const'
+import useTranslation from '../hooks/useTranslation'
 
 export default function Index({quartos, feed}) {
+  const { t, locale } = useTranslation();
+  // console.log(locale)
+
   return (
     <div className={styles.container}>
       <HeadMain />
