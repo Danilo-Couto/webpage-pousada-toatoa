@@ -41,7 +41,9 @@ export const LangStrings = {
     banner_home_descricao: 'VIAJAMOS O MUNDO E SOMOS APAIXONADOS POR RECEBER E CONHECER PESSOAS',
 
     galeria_fotos: 'GALERIA DE FOTOS',
-    galeria_descricao: 'Estacionamento - Café Da Manhã - Piscina - Cozinha Compartilhada - Wi-Fi - Lounge Social com Rede, TV, Sofá e Cafézinho Grátis.'
+    galeria_descricao: 'Estacionamento - Café Da Manhã - Piscina - Cozinha Compartilhada - Wi-Fi - Lounge Social com Rede, TV, Sofá e Cafézinho Grátis.',
+
+    avaliacoes_descricao: 'Visite nossos parceiros para ver o que nossos hóspedes dizem da gente.'    
   },
     en: {
       reservas: 'BOOK',
@@ -81,7 +83,10 @@ export const LangStrings = {
     banner_home_descricao: 'WE TRAVELED THE WORLD AND WE ARE PASSIONATE ABOUT HOST AND GET KNOW PEOPLE.',
 
     galeria_fotos: 'PICTURES',
-    galeria_descricao: 'Parking lot - Breakfast -  Pool - Shared Kitchen - Garden - Wi-Fi - Social Lounge - Bar - Free Coffee.'
+    galeria_descricao: 'Parking lot - Breakfast -  Pool - Shared Kitchen - Garden - Wi-Fi - Social Lounge - Bar - Free Coffee.',
+
+    avaliacoes_descricao: 'Visit ours partners to check what our guests say about us.',
+
 
     },
     es: {
@@ -122,7 +127,9 @@ export const LangStrings = {
       banner_home_descricao: 'VIAJAMOS EL MUNDO Y SOMOS PASIONADOS POR RECEBIR Y CONOCER PERSONAS',
 
       galeria_fotos: 'FOTOS',
-      galeria_descricao: 'Estacionamento - Desayuno - Piscina - Cocina Conpartida - Jardin - Wi-Fi - Lounge - Bar - Free Coffee.'
+      galeria_descricao: 'Estacionamento - Desayuno - Piscina - Cocina Conpartida - Jardin - Wi-Fi - Lounge - Bar - Free Coffee.',
+
+      avaliacoes_descricao: 'Visite nuestros parceros para ver lo que nuestros huespedes dicem de nosotros.'    
 
     },
   };
