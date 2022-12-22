@@ -2,9 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from '../../../styles/Home.module.css'
 import logo from '../../../public/images/logo_hospedaria_toatoa_em_pipa.jpeg'
-import { useRef } from "react";
+import useTranslation from '../../hooks/useTranslation';
 
 function Header() {
+  const { t, setLocale, locales } = useTranslation();
+
+  function handleLocaleChange(language: string) {
+    if (!window) {
+      return;
+    }
+
+    // const regex = new RegExp(`^/(${locales.join('|')})`);
+    localStorage.setItem('lang', language);
+    setLocale(language);
+
+    // if (!route.includes('post/')) {
+    //   push(pathname, asPath.replace(regex, `/${language}`));
+    // }
+  }
+
   return (
     <div className={styles.header}>
       <Link href='/'>
@@ -17,20 +33,25 @@ function Header() {
       </Link>
       <Link href="/"> </Link>
       <Link href="/"> </Link>
-      <Link href="/reservas">RESERVAS  </Link>
+      <Link href="/reservas">{t('reservas')}</Link>
       {/* <Link href="https://hbook.hsystem.com.br/Booking?companyId=632b13f5e819f634133f8f8a">RESERVAS  </Link> */}
-      <Link href="/quartos">QUARTOS </Link>
-      <Link href="/localizacao"> LOCALIZAÇÃO  </Link>
-      <Link href="/galeria">GALERIA  </Link>
-      <Link href="/avaliacoes">AVALIAÇÕES  </Link>
-      {/* <Link href="/passeios_pagos">PASSEIOS PAGOS </Link>
-      <Link href="/passeios_gratis">PASSEIOS SEM GUIAS </Link>
-      <Link href="/faq">FAQ  </Link> */}
-      <Link href="/como_chegar"> COMO CHEGAR </Link>
-      {/* <Link href="/reveillon"> REVEILLON 2023</Link> */}
-
+      <Link href="/quartos"> {t('quartos')}</Link>
+      <Link href="/localizacao"> {t('localizacao')}</Link>
+      <Link href="/galeria"> {t('galeria')}</Link>
+      <Link href="/avaliacoes"> {t('avaliacoes')}</Link>
+      {/* <Link href="/passeios_pagos"> {t('passeios_pagos')} </Link>
+      <Link href="/passeios_gratis"> {t('passeios_gratis')} </Link>
+      <Link href="/faq"> {t('')} FAQ  </Link> */}
+      <Link href="/como_chegar"> {t('como_chegar')}</Link>
+      {/* <Link href="/reveillon"> {t('reveillon')}</Link> */}
+      <div>
+        {locales.map((locale) => (
+          <button key={locale} onClick={() => handleLocaleChange(locale)}>
+            {locale}
+          </button>
+        ))}
+      </div>
     </div>
- );
-}
+ );}
 
 export default Header;

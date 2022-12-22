@@ -1,15 +1,18 @@
 import styles from '../../../styles/Home.module.css'
 import Image from 'next/image'
 import Link from 'next/link';
+import useTranslation from '../../hooks/useTranslation';
 
 function Quartos({quartos}) {
+  const {t} = useTranslation();
+
   return (
     <div className={styles.main}>
       <h2 className={styles.sub_title}>
-        NOSSOS QUARTOS
+        {t('nossos_quartos')}
       </h2>
       <h3 className={styles.description}>
-        Quartos privativos para casais e grupos de até 6 pessoas. Todos com banheiro privativo com chuveiro elétrico, wifi, toalhas e roupas de cama.
+        {t('nossos_quartos_descricao')}
       </h3>
       <div className={styles.grid}>
         {quartos.map((e, i)=> ( 

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../../../styles/Home.module.css'
-import { handleRedirect } from '../../helpers';
+import BookNowButton from '../Buttons/bookNow';
 
 function Quarto({quarto}) {
   return (
@@ -15,11 +15,7 @@ function Quarto({quarto}) {
             {quarto.items.map((item, i) => 
             <li key={i}> {item} </li>)}
           </ul>
-          <button
-            className={styles.button_booknow}
-            onClick={() => handleRedirect(quarto.book)}
-            > RESERVAR ESTE
-          </button>
+          <BookNowButton />
           <div></div>
         </div>        
       </div>

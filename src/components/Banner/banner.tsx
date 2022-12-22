@@ -1,8 +1,11 @@
 import Image from "next/image";
 import styles from '../../../styles/Home.module.css'
 import mypic from '../../../public/images/praia-do-pipa-tibau-do-sul.jpg'
+import useTranslation from "../../hooks/useTranslation";
 
 function Banner() {
+  const {t} = useTranslation();
+
   return (
     <div className={styles.main}>
       -
@@ -13,10 +16,10 @@ function Banner() {
       />
       <div className={styles.titles}>
         <h2 className={styles.sub_title}>
-          DE VIAJANTE PARA VIAJANTES
+          {t('banner_home')}
         </h2>  
         <h2>
-          VIAJAMOS O MUNDO E SOMOS APAIXONADOS POR RECEBER E CONHECER PESSOAS
+          {t('banner_home_descricao')}
         </h2>
       </div>
     </div>
