@@ -4,7 +4,7 @@ import Link from 'next/link';
 import useTranslation from '../../hooks/useTranslation';
 
 function Quartos({quartos}) {
-  const {t} = useTranslation();
+  const {t, locale} = useTranslation();
 
   return (
     <div className={styles.main}>
@@ -19,7 +19,7 @@ function Quartos({quartos}) {
           <Link
           className={styles.card}
           key = {i}
-          href={e.href} 
+          href={`/${locale}/${e.href}`} 
           >
           <div className={styles.titles}>
             <h2>{e.title}</h2>

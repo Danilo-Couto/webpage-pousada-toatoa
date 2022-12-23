@@ -1,8 +1,8 @@
-import Footer from '../../components/Footer/footer'
-import Header from '../../components/Header/header'
-import styles from '../../../styles/Home.module.css'
-import { rooms } from '../../consts/rooms_const'
-import Quarto from '../../components/Quarto/quarto'
+import Footer from '../../../components/Footer/footer';
+import Header from '../../../components/Header/header';
+import Quarto from '../../../components/Quarto/quarto';
+import { rooms } from '../../../consts/rooms_const';
+import styles from '../../../../styles/Home.module.css'
 
 export default function Quartos ({quarto}) {
   return(
@@ -23,8 +23,8 @@ export async function getStaticProps({ params }) {
     props: {
       quarto
     }
-  }
-}
+  };
+};
 
 export function getStaticPaths() {
   const paths = rooms.map(room => {
@@ -35,8 +35,9 @@ export function getStaticPaths() {
       }
     }
   });
+  
   return {
     paths,
     fallback: false
-  }
-}
+  };
+};
