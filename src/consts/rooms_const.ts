@@ -7,7 +7,7 @@ const subtituloChales = 'PRIVATIVO 1 A 3 PESSOAS'
 
 const descriptionSuite = 'Aconchegante e minimalista acomoda até 4 pessoas. Tem banheiro privativo com chuveiro elétrico, ar-condicionado e varanda com rede. Perfeito para relaxar após um dia cheio de atividades como surf, caminhadas e passeios.' 
 const descriptionAptos = 'Nossa opção para grupos e famílias. 2 ambientes: um com cama de casal e outro com 2 beliches. Ar-condicionado, banheiro privativo e varanda com rede.' 
-const descriptionChales = 'Nossa opção de entrada, a mais economica. Ventilador e banheiro privativo. Para até 3 pessoas: 1 cama de casal + 1 beliche.' 
+const descriptionChales = 'Nossa opção de entrada, a mais econômica. Ventilador e banheiro privativo. Para até 3 pessoas: 1 cama de casal + 1 cama flutuante.' 
 
 const itemsSuite = [
     'Uma cama de casal',
@@ -29,12 +29,13 @@ const itemsAptos = [
     'Varanda com Rede',
 ]
 const itemsChales = [
-    'Um treliche',
+    'Uma cama de casal(tamanho viúva)',
+    'Uma cama flutuante',
     'Roupa de Cama',
     'Toalhas',
     'Ventilador',
     'Wi-Fi',
-]
+];
 
 export const rooms = [
     {
@@ -97,7 +98,7 @@ export const rooms = [
         name: 'branco',
         title: 'CHALE DA PAZ',
         subtitulo: subtituloChales,
-        description: 'Chalé Triplo, ou colocada de maneira mais poética, nosso Chalé da Paz fica no 1a andar.',
+        description: 'Nosso Chalé da Paz fica no 1a andar.',
         subDescription: descriptionChales,
         items: itemsChales,
         src: BRANCO,
@@ -107,4 +108,4 @@ export const rooms = [
         price2: '5 DIAS a partir de R$ 2.800',
         book: otas.branco
     }
-]
+];
