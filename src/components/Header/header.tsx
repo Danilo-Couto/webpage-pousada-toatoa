@@ -3,22 +3,24 @@ import Link from "next/link";
 import styles from '../../../styles/Home.module.css'
 import logo from '../../../public/images/logo_hospedaria_toatoa_em_pipa.jpeg'
 import useTranslation from '../../hooks/useTranslation';
+import { useRouter } from "next/router";
 
 function Header() {
-  const { t, setLocale, locales } = useTranslation();
+  const { t, locale, setLocale, locales } = useTranslation();
+  const { asPath, pathname, push, route } = useRouter();
 
   function handleLocaleChange(language: string) {
     if (!window) {
       return;
     }
-
-    // const regex = new RegExp(`^/(${locales.join('|')})`);
+    
+    const regex = new RegExp(`^/(${locales.join('|')})`);
     localStorage.setItem('lang', language);
     setLocale(language);
 
-    // if (!route.includes('post/')) {
-    //   push(pathname, asPath.replace(regex, `/${language}`));
-    // }
+    if (!route.includes('quartos/')) {
+      push(pathname, asPath.replace(regex, `/${language}`));
+    }
   }
 
   return (
@@ -35,7 +37,7 @@ function Header() {
       <Link href="/"> </Link>
       <Link href="/reservas">{t('reservas')}</Link>
       {/* <Link href="https://hbook.hsystem.com.br/Booking?companyId=632b13f5e819f634133f8f8a">RESERVAS  </Link> */}
-      <Link href="/quartos"> {t('quartos')}</Link>
+      <Link href={`${locale}/quartos`}> {t('quartos')}</Link>
       <Link href="/localizacao"> {t('localizacao')}</Link>
       <Link href="/galeria"> {t('galeria')}</Link>
       <Link href="/avaliacoes"> {t('avaliacoes')}</Link>
@@ -55,3 +57,5 @@ function Header() {
  );}
 
 export default Header;
+
+// referencia: https://github.dev/elvessousa/next-intl
