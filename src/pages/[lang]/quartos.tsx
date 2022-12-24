@@ -8,7 +8,7 @@ import changeLanguages from '../../hooks/changeLanguages'
 
 export default function Home({locale}) {
   const quartos = changeLanguages(locale);
-  // console.log(quartos)
+
   return (
     <div className={styles.container}>
       <HeadRooms/>
