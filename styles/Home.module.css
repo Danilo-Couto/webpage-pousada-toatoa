@@ -301,6 +301,11 @@
   cursor: pointer;
 }
 
+.button_flags {
+  background-color:white;
+  cursor: pointer;
+  border: none;
+}
 
 @media (max-width: 1200px) { 
   .header{

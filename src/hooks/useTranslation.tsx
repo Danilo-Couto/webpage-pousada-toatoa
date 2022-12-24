@@ -10,7 +10,7 @@ export default function useTranslation() {
       console.warn(`No string '${key}' for locale '${locale}'`);
     }
 
-    return LangStrings[locale][key] || LangStrings[defaultLocale][key] || ''; // t
+    return LangStrings[locale][key] || LangStrings[defaultLocale][key] || '';
   }
 
   return { t, locale, setLocale, locales };

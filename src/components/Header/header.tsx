@@ -4,10 +4,17 @@ import styles from '../../../styles/Home.module.css'
 import logo from '../../../public/images/logo_hospedaria_toatoa_em_pipa.jpeg'
 import useTranslation from '../../hooks/useTranslation';
 import { useRouter } from "next/router";
+import ReactCountryFlag from "react-country-flag";
 
 function Header() {
   const { t, locale, setLocale, locales } = useTranslation();
   const { asPath, pathname, push, route } = useRouter();
+
+  const flag = (locale) => { 
+    if (locale === 'pt' ) return 'BR';
+    if (locale === 'en' ) return 'US';
+    if (locale === 'es' ) return 'ES';
+  }
 
   function handleLocaleChange(language: string) {
     if (!window) {
@@ -46,15 +53,22 @@ function Header() {
       <Link href="/faq"> {t('')} FAQ  </Link> */}
       <Link href="/como_chegar"> {t('como_chegar')}</Link>
       {/* <Link href="/reveillon"> {t('reveillon')}</Link> */}
-      <div>
         {locales.map((locale) => (
-          <button key={locale} onClick={() => handleLocaleChange(locale)}>
-            {locale}
+          <button
+          className={styles.button_flags}
+          key={locale}
+          onClick={() => handleLocaleChange(locale)}>
+            <ReactCountryFlag
+              countryCode={flag(locale)}
+              style={{
+                  fontSize: '2em',
+              }}
+          />
           </button>
         ))}
-      </div>
     </div>
- );}
+ );
+}
 
 export default Header;
 
