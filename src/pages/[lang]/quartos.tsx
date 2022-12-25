@@ -3,8 +3,9 @@ import Footer from '../../components/Footer/footer'
 import HeadRooms from '../../components/Head/head_rooms'
 import Header from '../../components/Header/header'
 import Quartos from '../../components/Quartos/quartos'
-import { rooms } from '../../consts/rooms_const'
+import { locales } from '../../context/LanguageContext'
 import changeLanguages from '../../hooks/changeLanguages'
+import { rooms } from '../../lib/rooms_const'
 
 export default function Home({locale}) {
   const quartos = changeLanguages(locale);
@@ -29,8 +30,16 @@ export async function getStaticProps(paths) {
 };
 
 export const getStaticPaths = async () => {
+  const paths = locales.map(local => {
+    return {
+      params: {
+        lang: local,
+      }
+    }
+  });
+        
   return {
-    paths: [{ params: { lang: 'pt' } }, { params: { lang: 'en' } }, { params: { lang: 'es' } }],
+    paths,
     fallback: false,
   };
 };
