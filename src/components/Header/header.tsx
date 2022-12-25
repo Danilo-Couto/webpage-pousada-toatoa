@@ -40,9 +40,14 @@ function Header() {
         />
       <Link href="/"> </Link>
       <Link href="/">HOME</Link>
-      <Link href="/reservas">{t('reservas')}</Link>
-      {/* <Link href="https://hbook.hsystem.com.br/Booking?companyId=632b13f5e819f634133f8f8a">RESERVAS  </Link> */}
-      <Link href={`${locale}/quartos`}> {t('quartos')}</Link>
+      <Link href="/reservas">{t('reservas')}</Link>    
+      <Link
+      href={{
+        pathname: '/[lang]/quartos',
+        query: {lang: locale},
+      }}
+    > {t('quartos')}
+    </Link>
       <Link href="/localizacao"> {t('localizacao')}</Link>
       <Link href="/galeria"> {t('galeria')}</Link>
       <Link href="/avaliacoes"> {t('avaliacoes')}</Link>
