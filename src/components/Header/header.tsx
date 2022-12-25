@@ -9,7 +9,7 @@ import ReactCountryFlag from "react-country-flag";
 function Header() {
   const { t, locale, setLocale, locales } = useTranslation();
   const { asPath, pathname, push, route } = useRouter();
-
+  
   const flag = (locale) => { 
     if (locale === 'pt' ) return 'BR';
     if (locale === 'en' ) return 'US';
@@ -25,7 +25,7 @@ function Header() {
     localStorage.setItem('lang', language);
     setLocale(language);
 
-    if (!route.includes('quartos/')) {
+    if (route.includes('quartos/')) {
       push(pathname, asPath.replace(regex, `/${language}`));
     }
   }

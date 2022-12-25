@@ -5,7 +5,6 @@ import Header from '../../components/Header/header'
 import Quartos from '../../components/Quartos/quartos'
 import { locales } from '../../context/LanguageContext'
 import changeLanguages from '../../hooks/changeLanguages'
-import { rooms } from '../../lib/rooms_const'
 
 export default function Home({locale}) {
   const quartos = changeLanguages(locale);
@@ -24,12 +23,11 @@ export async function getStaticProps(paths) {
   return {
       props: {
         locale: paths.params?.lang || 'pt',
-        rooms: rooms
       }
   };
 };
 
-export const getStaticPaths = async () => {
+export async function getStaticPaths() {
   const paths = locales.map(local => {
     return {
       params: {
