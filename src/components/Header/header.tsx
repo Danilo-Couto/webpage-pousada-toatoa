@@ -32,16 +32,14 @@ function Header() {
 
   return (
     <div className={styles.header}>
-      <Link href='/'>
         <Image
           src={logo}
           alt="Acomodaçoes Toa Toa Em Pipa"
-          width={100}
-          height={100}
+          width={125}
+          height={125}
         />
-      </Link>
       <Link href="/"> </Link>
-      <Link href="/"> </Link>
+      <Link href="/">HOME</Link>
       <Link href="/reservas">{t('reservas')}</Link>
       {/* <Link href="https://hbook.hsystem.com.br/Booking?companyId=632b13f5e819f634133f8f8a">RESERVAS  </Link> */}
       <Link href={`${locale}/quartos`}> {t('quartos')}</Link>
