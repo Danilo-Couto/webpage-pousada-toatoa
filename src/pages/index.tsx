@@ -3,12 +3,13 @@ import styles from '../../styles/Home.module.css'
 import MainPage from '../components/MainPage/mainpage'
 import Footer from '../components/Footer/footer'
 import Header from '../components/Header/header'
-import { rooms } from '../consts/rooms_const'
 import useTranslation from '../hooks/useTranslation'
+import changeLanguages from '../hooks/changeLanguages'
+import { rooms } from '../lib/rooms_const'
 
-export default function Index({quartos, feed}) {
-  const { t, locale } = useTranslation();
-  // console.log(locale)
+export default function Index({feed}) {
+  const { locale } = useTranslation()
+  const quartos = changeLanguages(locale);
 
   return (
     <div className={styles.container}>

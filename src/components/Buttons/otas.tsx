@@ -1,5 +1,6 @@
 import styles from '../../../styles/Home.module.css'
-import { otas } from '../../consts/otas';
+import { otas } from '../../lib/otas';
+
 
 export default function OtasButton() {
   return (

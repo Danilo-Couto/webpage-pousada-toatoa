@@ -1,6 +1,6 @@
-import { rooms as roomsPt } from "../consts/rooms_const";
-import { rooms as roomsEn } from "../consts/rooms_const_en";
-import { rooms as roomsEs } from "../consts/rooms_const_es";
+import { rooms as roomsPt } from "../lib/rooms_const";
+import { rooms as roomsEn } from "../lib/rooms_const_en";
+import { rooms as roomsEs } from "../lib/rooms_const_es";
 
 
 export default function changeLanguages(locale) {

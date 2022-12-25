@@ -1,12 +1,11 @@
 import styles from '../../../styles/Home.module.css'
-import { particulares, taxistas } from '../../consts/como_chegar_const';
 import ButtonDrive from '../../components/Buttons/bookDrive';
 import Footer from '../../components/Footer/footer';
 import Header from '../../components/Header/header';
 import BlablacarButton from '../../components/Buttons/blablacar';
 import HeadGettingHere from '../../components/Head/head_gettingthere';
 import useTranslation from '../../hooks/useTranslation';
-import Link from 'next/link';
+import { particulares, taxistas } from '../../lib/como_chegar_const';
 
 export default function Home() {
   const { t } = useTranslation();

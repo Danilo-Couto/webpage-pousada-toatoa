@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "next.config.js", "src/pages/[lang]/quartos/laranja.tsx__", "src/pages/[lang]/quartos/[pid].tsx__", "src/pages/[lang]/quartos/test.js", "src/consts copy.js", "src/test.js", "src/consts/images.js", "src/pages/404.js", "src/pages/sitemap.xml.js", "src/pages/sitemap.xml.js"  ],
+, "next.config.js", "src/pages/[lang]/quartos/laranja.tsx__", "src/pages/[lang]/quartos/[pid].tsx__", "src/pages/[lang]/quartos/test.ts", "src/consts copy.js", "src/test.js", "src/consts/images.js", "src/pages/404.js", "src/pages/sitemap.xml.js", "src/pages/sitemap.xml.js"  ],
   "exclude": [
     "node_modules"
   ]
