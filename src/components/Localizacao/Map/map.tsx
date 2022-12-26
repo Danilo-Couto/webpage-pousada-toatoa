@@ -14,10 +14,12 @@ function Map() {
     });
     
     return (  
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.89015985388593!2d-35.04323951790947!3d-6.231721425030225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b28fb676dba819%3A0xa2acc91d07df4801!2sPOUSADA%20TOA%20TOA%20EM%20PIPA!5e0!3m2!1spt-BR!2sbr!4v1669895758999!5m2!1spt-BR!2sbr" 
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11546.9701011241!2d-35.05668435555337!3d-6.230699016318558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b28fb676dba819%3A0xa2acc91d07df4801!2sPOUSADA%20TOA%20TOA%20EM%20PIPA!5e0!3m2!1sen!2sbr!4v1671908364324!5m2!1sen!2sbr" width="600" 
             loading="lazy" allowFullScreen
-            style={{ border: 0, width: '100vw', height:'400px'}}
-            ></iframe>
+            style={{ border: 0, width: '90vw', height:'400px'}}
+            >
+        </iframe>
 
         // <div >
         //     {isLoaded ?

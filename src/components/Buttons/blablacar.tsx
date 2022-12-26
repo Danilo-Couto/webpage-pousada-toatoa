@@ -1,5 +1,4 @@
 import styles from '../../../styles/Home.module.css'
-import { otas } from '../../consts/otas';
 import { handleRedirect } from '../../helpers';
 
 export default function BlablacarButton() {

@@ -2,8 +2,11 @@ import Image from "next/image";
 import styles from '../../../styles/Home.module.css'
 import mypic from '../../../public/images/hospedagem praia do amor - toa toa 20220907_124214~2.jpg'
 import BookNowButton from "../Buttons/bookNow";
+import useTranslation from "../../hooks/useTranslation";
 
 function Intro() {
+  const {t} = useTranslation();
+
   return (
     <div className={styles.main}>
       <Image
@@ -13,10 +16,10 @@ function Intro() {
       />
       <div className={styles.titles}>
         <h1 className={styles.title}>
-          BEM VINDO A POUSADA TOA TOA EM PIPA!
+          {t('bem_vindo')}
         </h1>
         <h2 className={styles.sub_title}>
-        A 50 METROS DA PRAIA DO AMOR E 550 METROS DO CENTRO
+          {(t('slogan'))}
         </h2>  
       <BookNowButton/>
       </div>

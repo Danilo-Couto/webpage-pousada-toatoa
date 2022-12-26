@@ -1,6 +1,10 @@
 import '../../styles/globals.css'
+import { LanguageProvider } from '../context/LanguageContext'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router  }) {
+  // console.log('Component:', Component)
+  // console.log('pageProps:', pageProps)
+
   return (
   <>
     {/* <!-- Google Tag Manager (noscript) --> */}
@@ -10,7 +14,10 @@ function MyApp({ Component, pageProps }) {
       }}
     />
     {/* <!-- End Google Tag Manager (noscript) --> */}
-    <Component {...pageProps} /></>
+    <LanguageProvider>
+      <Component {...pageProps} />
+    </LanguageProvider>
+    </>
   )
 }
 
