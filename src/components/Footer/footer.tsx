@@ -23,7 +23,7 @@ export default function Footer() {
       <AiOutlineWhatsApp
         className={styles.logo}
         onClick={() =>
-          handleRedirect('https://wa.me/message/P7Y6BQIEU6KTO1')
+          handleRedirect('https://wa.me/5584981096734')
        }
     />
     </section>
