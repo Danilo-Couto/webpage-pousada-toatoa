@@ -18,14 +18,16 @@ export default function Footer() {
         className={styles.logo}
         onClick={() =>
           handleRedirect('https://www.facebook.com/HospedariaToaToaEmPipa')
+        } 
+      />
+      <a href="#">
+      {<AiOutlineWhatsApp
+          className={styles.whats_float}
+          onClick={() =>
+            handleRedirect('https://wa.me/5584981096734')
         }
-    />
-      <AiOutlineWhatsApp
-        className={styles.logo}
-        onClick={() =>
-          handleRedirect('https://wa.me/5584981096734')
-       }
-    />
+      /> }
+      </a>
     </section>
     <span>
       Pousada Toa Toa Em Pipa - Rua Praia do Amor, 48 B
