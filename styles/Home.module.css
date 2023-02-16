@@ -308,6 +308,20 @@
   border: none;
 }
 
+.whats_float {
+	position:fixed;
+	width:160px;
+	height:150px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:80px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
 @media (max-width: 1200px) { 
   .header{
    display:none;
@@ -347,6 +361,10 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+  }
+  .whats_float{
+    width:100px;
+    height:95px;
   }
 }
 
