@@ -10,7 +10,7 @@ function Header() {
   const { t, locale, setLocale, locales } = useTranslation();
   const { asPath, pathname, push, route } = useRouter();
   
-  const flag = (locale) => { 
+  const flag = (locale: string) => { 
     if (locale === 'pt' ) return 'BR';
     if (locale === 'en' ) return 'US';
     if (locale === 'es' ) return 'ES';
@@ -51,11 +51,7 @@ function Header() {
       <Link href="/localizacao"> {t('localizacao')}</Link>
       <Link href="/galeria"> {t('galeria')}</Link>
       <Link href="/avaliacoes"> {t('avaliacoes')}</Link>
-      {/* <Link href="/passeios_pagos"> {t('passeios_pagos')} </Link>
-      <Link href="/passeios_gratis"> {t('passeios_gratis')} </Link>
-      <Link href="/faq"> {t('')} FAQ  </Link> */}
       <Link href="/como_chegar"> {t('como_chegar')}</Link>
-      {/* <Link href="/reveillon"> {t('reveillon')}</Link> */}
         {locales.map((locale) => (
           <button
           className={styles.button_flags}
