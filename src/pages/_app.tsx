@@ -1,9 +1,7 @@
 import '../../styles/globals.css'
 import { LanguageProvider } from '../context/LanguageContext'
 
-function MyApp({ Component, pageProps, router  }) {
-  // console.log('Component:', Component)
-  // console.log('pageProps:', pageProps)
+function MyApp({ Component, pageProps }) {
 
   return (
   <>
