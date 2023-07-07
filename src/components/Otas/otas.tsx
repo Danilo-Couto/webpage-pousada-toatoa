@@ -1,8 +1,8 @@
 import styles from '../../../styles/Home.module.css'
 import useTranslation from '../../hooks/useTranslation';
 import BookNowButton from '../Buttons/bookNow';
-import OtasButton from '../Buttons/otas';
-function Otas() {
+import HBook from '../HBook/HBook';
+function Otas() {''
   const {t} = useTranslation();
 
   return (
@@ -14,8 +14,8 @@ function Otas() {
         <h3 className={styles.description}>
         {t('otas_descricao')}
         </h3>
+        <HBook/>
         <BookNowButton/>
-        <OtasButton/>
       </div>
     </div>
   );
