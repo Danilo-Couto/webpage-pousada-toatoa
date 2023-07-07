@@ -27,7 +27,7 @@ export async function getStaticProps() {
   try {
     const data = await fetch(instaUrl);
     const dataJson = await data.json();
-    instaFeed = dataJson.data.filter(data => data.media_type === 'IMAGE' )   
+    instaFeed = dataJson.data.filter((data: { media_type: string }) => data.media_type === 'IMAGE' )   
   } catch (error) {
     console.log(error)
   }
