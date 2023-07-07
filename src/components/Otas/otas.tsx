@@ -14,7 +14,6 @@ function Otas() {''
         <h3 className={styles.description}>
         {t('otas_descricao')}
         </h3>
-        <HBook/>
         <BookNowButton/>
       </div>
     </div>
