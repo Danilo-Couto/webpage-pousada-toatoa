@@ -17,3 +17,6 @@ function Avaliacoes(ratings) {
 }
 
 export default Avaliacoes;
+
+
+// não usei a API do Booking, pois eles limitam e um parceiro ja a esta consumindo.

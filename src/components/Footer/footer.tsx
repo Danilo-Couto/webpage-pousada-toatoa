@@ -21,12 +21,6 @@ export default function Footer() {
         } 
       />
       <a href="#">
-      {<AiOutlineWhatsApp
-          className={styles.whats_float}
-          onClick={() =>
-            handleRedirect('https://wa.me/5584981096734')
-        }
-      /> }
       </a>
     </section>
     <span>
