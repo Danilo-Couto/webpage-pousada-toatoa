@@ -13,4 +13,4 @@ Webpage for desktop and mobile screen for my own hotel business - http://pousada
   2. Booking API for ratings
   3. Connection with channel manager and booking engine
 
-![eu](https://github.com/Danilo-Couto/webpage-pousada-toatoa/assets/88905222/0466ea69-11db-4826-9a80-7ad0b5d39062)
+![toatoa](https://github.com/Danilo-Couto/webpage-pousada-toatoa/assets/88905222/4ee7d756-f7e5-49b8-973d-113a4a47d74c)
