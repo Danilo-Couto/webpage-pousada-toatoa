@@ -7,7 +7,7 @@ export default function BookNowButton() {
 
   return (
     <button className={styles.button_booknow} 
-      onClick={() => handleRedirect('https://hbook.hsystem.com.br/Booking?companyId=632b13f5e819f634133f8f8a')}>
+    onClick={() => handleRedirect("https://wa.me/5584996250055")}>
       <h3>{t('reserve_button')}</h3>
     </button>
   );

@@ -310,16 +310,19 @@
 
 .whats_float {
 	position:fixed;
-	width:160px;
-	height:150px;
+	width:120px;
+	height:120px;
 	bottom:40px;
 	right:40px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:80px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+	box-shadow: 3px 3px 3px #c9c7c7;
+  /* z-index:100; */
+}
+
+.whats_float :hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) { 
@@ -364,7 +367,7 @@
   }
   .whats_float{
     width:100px;
-    height:95px;
+    height:100px;
   }
 }
 

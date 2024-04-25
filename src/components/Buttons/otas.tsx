@@ -14,9 +14,6 @@ export default function OtasButton() {
         <a href={otas.expedia} className={styles.otas_card} target="_blank" rel="noreferrer">
             <p> EXPEDIA</p>
         </a>
-        <a href={otas.hostelword} className={styles.otas_card} target="_blank" rel="noreferrer">
-            <p> HOSTELWORLD</p>
-        </a>
     </div>
   );
 }

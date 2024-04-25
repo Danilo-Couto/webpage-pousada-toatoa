@@ -10,24 +10,20 @@ export default function Footer() {
   return (
   <div className={styles.footer}>
     <section className={styles.icons}>
-      <AiOutlineInstagram
-        className={styles.logo}
-        onClick={() => handleRedirect('https://instagram.com/toatoa_pipa')}
-      />
-      <AiFillFacebook 
-        className={styles.logo}
-        onClick={() =>
-          handleRedirect('https://www.facebook.com/HospedariaToaToaEmPipa')
-        } 
-      />
       <a href="#">
       </a>
     </section>
     <span>
       Pousada Toa Toa Em Pipa - Rua Praia do Amor, 48 B
     </span> 
+    <section>
+      <AiOutlineWhatsApp 
+        className={styles.whats_float}
+        onClick={() => handleRedirect("https://wa.me/5584996250055")}
+      />
+    </section>
     <button className={styles.back_to_top} type="button" onClick={handleScrollTop}>
-      Back to the Top
+      De volta ao Topo
     </button>
 </div>
 
