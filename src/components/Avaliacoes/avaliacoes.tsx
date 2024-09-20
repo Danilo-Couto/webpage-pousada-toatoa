@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import styles from '../../../styles/Home.module.css'
 import useTranslation from '../../hooks/useTranslation';
-import RatingsBooking from './RatingsBooking';
+import RatingsBooking from './ratingsBooking';
 
 function Avaliacoes(ratings) {
   const {t} = useTranslation();

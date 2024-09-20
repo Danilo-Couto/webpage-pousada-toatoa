@@ -1,6 +1,5 @@
 import { GoogleMap, Marker, LoadScript, useJsApiLoader } from "@react-google-maps/api";
 import { useMemo } from "react";
-import styles from '../../../../styles/Home.module.css'
 
 function Map() {
   const center = useMemo(() => ({ 
