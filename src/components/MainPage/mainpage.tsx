@@ -11,7 +11,6 @@ export default function MainPage({quartos, feed}) {
   return (
     <main>
       <Intro />
-      {/* <HBook/> */}
       <Quartos quartos = {quartos}/>
       <Avaliacoes />
       <Localizacao />

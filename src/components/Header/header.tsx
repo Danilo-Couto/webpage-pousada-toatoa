@@ -32,14 +32,14 @@ function Header() {
 
   return (
     <div className={styles.header}>
+      <Link href="/">         
         <Image
           src={logo}
           alt="Acomodaçoes Toa Toa Em Pipa"
           width={125}
           height={125}
         />
-      <Link href="/"> </Link>
-      <Link href="/">HOME</Link>
+      </Link>
       <Link href="/reservas">{t('reservas')}</Link>    
       <Link
       href={{

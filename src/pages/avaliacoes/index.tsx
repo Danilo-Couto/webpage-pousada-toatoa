@@ -1,5 +1,5 @@
 import styles from '../../../styles/Home.module.css'
-import RatingsBooking from '../../components/Avaliacoes/RatingsBooking';
+import RatingsBooking from '../../components/Avaliacoes/ratingsBooking';
 import OtasButton from '../../components/Buttons/otas';
 import Footer from '../../components/Footer/footer';
 import Header from '../../components/Header/header';
