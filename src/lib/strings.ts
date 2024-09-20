@@ -1,5 +1,3 @@
-import Localizacao from "../components/Localizacao/localizacao";
-
 export const LangStrings = {
     pt: {
       reservas: 'RESERVAS',
@@ -9,7 +7,7 @@ export const LangStrings = {
       avaliacoes: 'AVALIAÇÕES', 
       como_chegar:'COMO CHEGAR',
 
-      bem_vindo: 'BEM VINDO A POUSADA TOA TOA EM PIPA!',
+      bem_vindo: 'BEM VINDO À POUSADA TOA TOA EM PIPA!',
       slogan: 'A 50 METROS DA PRAIA DO AMOR E 500 METROS DO CENTRO',
 
       reserve_button : 'RESERVAR',
@@ -67,7 +65,18 @@ export const LangStrings = {
       sabado: 'Sábados',
       domingos: 'Domingos e feriados',
       
-      mais_infos: 'Para más informaciones, consulte estes sitios:'
+      mais_infos: 'Para más informaciones, consulte estes sitios:',
+
+      Nome: "Nome",
+      QuantidadeDePessoas: "Quantidade de Pessoas",
+      TemCrianças: "TemCrianças",
+      Sim: "Sim",
+      Nao: "Não",
+      QuantasCriancas: "QuantasCriancas",
+      IdadeCriança: "IdadeCriança",
+      DataDesejada: "DataDesejada",
+      botaoEnviar: "ENVIAR",
+      avisoForm: "Após clicar em ENVIAR você será redirecionado para nosso WhatsApp. Aguarde para ser atendido. Obrigado pelo contato."
   },
     en: {
       reservas: 'BOOK',
@@ -130,7 +139,19 @@ export const LangStrings = {
       sabado: 'Saturdays',
       domingos: 'Sundays and Holidays',
 
-      mais_infos: 'For more information, check this links:'
+      mais_infos: 'For more information, check this links:',
+
+      Nome: "Name",
+      QuantidadeDePessoas: "Number of People",
+      TemCrianças: "Have Children",
+      Sim: "Yes",
+      Nao: "No",
+      QuantasCriancas: "How Many Children",
+      IdadeCriança: "Children's Age",
+      DataDesejada: "Desired Date",
+      botaoEnviar: "SEND",
+      avisoForm: "After clicking SEND, you will be redirected to our WhatsApp. Please wait to be attended to. Thank you for contacting us."    
+      
     },
     es: {
         reservas: 'RESERVACIONES',
@@ -197,7 +218,18 @@ export const LangStrings = {
         sabado: 'Sábados',
         domingos: 'Domingos y feriados',
 
-        mais_infos: 'Para mais informações, consulte estes sites:'
+        mais_infos: 'Para más informaciones, consulte estes sitios:',
+
+        Nome: "Nombre",
+        QuantidadeDePessoas: "Cantidad de Personas",
+        TemCrianças: "¿Tienes Niños?",
+        Sim: "Sí",
+        Nao: "No",
+        QuantasCriancas: "¿Cuántos Niños?",
+        IdadeCriança: "Edad del Niño",
+        DataDesejada: "Fecha Deseada",
+        botaoEnviar: "ENVIAR",
+        avisoForm: "Después de hacer clic en ENVIAR, será redirigido a nuestro WhatsApp. Espere para ser atendido. Gracias por contactarnos."      
 
     },
   };
